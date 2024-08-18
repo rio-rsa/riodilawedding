@@ -1,0 +1,17 @@
+{
+  "name": "riodilawedding",
+  "version": "1.0.0",
+  "description": "my-project/ │ ├── public/                     # Static assets for deployment │   ├── css/ │   │   └── styles.css          # Compiled Tailwind CSS file │   ├── js/ │   │   └── alpine.js           # Alpine.js (optional if using CDN) │   ├── index.html              # Main HTML file │   └── assets/                 # Images, fonts, etc. │ ├── src/                        # Source files │   ├── css/ │   │   └── tailwind.css        # Tailwind CSS source file │   └── js/ │       └── main.js             # Your custom JS (optional) │ ├── .gitignore                  # Ignore files like node_modules, .env, etc. ├── tailwind.config.js          # Tailwind CSS configuration ├── postcss.config.js           # PostCSS configuration for Tailwind CSS └── package.json                # Node.js dependencies and scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
+  }
+}
