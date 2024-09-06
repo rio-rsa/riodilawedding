@@ -22,4 +22,4 @@ my-project/
 └── package.json                # Node.js dependencies and scripts
 
 ## Run tailwind build
-npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch
+npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch
