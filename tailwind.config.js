@@ -11,7 +11,14 @@ module.exports = {
       },
       width: {
         '9/10': '90%',
-      }
+      },
+      colors: {
+        customGray: '#5E5A5A',
+        customGreen: '#304A4C',
+      },
+      fontFamily: {
+        garamond: ['EB Garamond', 'serif'],
+      },
     },
   },
   plugins: [],
