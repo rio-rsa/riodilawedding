@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         customGray: '#5E5A5A',
         customGreen: '#304A4C',
+        customBlack: '#282828'
       },
       fontFamily: {
         garamond: ['EB Garamond', 'serif'],
