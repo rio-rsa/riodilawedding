@@ -16,7 +16,24 @@
             <!-- Stack of Texts above the image -->
             <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4">
                 <p class="text-customGray px-4 py-2 font-garamond">You are invited to</p>
-                <p class="text-customGreen px-4 py-2 font-garamond">THE WEDDING OF</p>
+                <p class="text-customGreen px-4 text-2xl font-garamond">THE WEDDING OF</p>
+
+                <!-- Photo Collage with Absolute Positioning -->
+                <div class="relative mt-8 w-64 h-80 mx-auto">
+                    <!-- Photo 1 -->
+                    <img src="/public/assets/photo1.jpeg" alt="Photo 1" class="absolute top-0 left-10 shadow-lg">
+                    <!-- Photo 2 -->
+                    <img src="/public/assets/photo2.jpeg" alt="Photo 2" class="absolute top-36 left-0 shadow-lg">
+                    <!-- Photo 3 -->
+                    <img src="/public/assets/photo3.jpeg" alt="Photo 3" class="absolute top-36 left-20 shadow-lg">
+                    <!-- Photo 4 -->
+                    <img src="/public/assets/photo4.jpeg" alt="Photo 4" class="absolute top-16 right-6 shadow-lg">
+                    <!-- Photo 5 -->
+                    <img src="/public/assets/photo5.jpeg" alt="Photo 5" class="absolute top-60 left-10 shadow-lg">
+                    <!-- Photo 6 -->
+                    <img src="/public/assets/photo6.jpeg" alt="Photo 6" class="absolute top-56 right-10 shadow-lg">
+                </div>
+
                 <p class="text-customGreen px-4 py-2 font-garamond">01.12.2024</p>
                 <p class="text-customBlack px-4 py-2 font-garamond">Gedung Lancang Kuning Duri</p>
                 <button id="scroll-btn" class="text-xl text-white bg-opacity-75 bg-black px-4 py-2 rounded-lg">
