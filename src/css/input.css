@@ -1,3 +1,21 @@
+/* input.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom Scroll Snapping */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.svg-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

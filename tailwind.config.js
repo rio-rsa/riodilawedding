@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-image': "url('/public/assets/megamendung.png')",
+        'subtract': "url('/public/assets/Subtract.jpeg')"
       },
       width: {
         '9/10': '90%',
@@ -15,7 +16,8 @@ module.exports = {
       colors: {
         customGray: '#5E5A5A',
         customGreen: '#304A4C',
-        customBlack: '#282828'
+        customBlack: '#282828',
+        customPrimaryGreen: '#304A4C'
       },
       fontFamily: {
         garamond: ['EB Garamond', 'serif'],
