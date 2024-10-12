@@ -16,3 +16,23 @@
   .hide {
     animation: slideUp 0.5s forwards;
   }
+
+  /* Additional custom styles if needed */
+@media (min-width: 960px) {
+    /* Ensure body overflow is reset on large screens */
+    .overflow-hidden {
+        overflow: auto;
+    }
+
+    #intro-section {
+        position: relative;
+        height: 100vh;
+        width: 50vw;
+    }
+
+    #main-content {
+        height: 100vh;
+        overflow-y: auto;
+        width: 50vw;
+    }
+}
