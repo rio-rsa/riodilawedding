@@ -4,14 +4,15 @@
 @tailwind utilities;
 
 
-/* Custom Scroll Snapping */
-html {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-
-.section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
+@keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .hide {
+    animation: slideUp 0.5s forwards;
+  }
