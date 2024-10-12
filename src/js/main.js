@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (window.innerWidth < 960 && !introSection.classList.contains('hidden') && mainContent.classList.contains('hidden')) {
             // For smaller screens: Enable Open Invitation button
             introSection.classList.add('fixed', 'inset-0', 'z-50');
-            body.classList.add('overflow-hidden');
+            // body.classList.add('overflow-hidden');
 
             // Mobile-specific "Open Invitation" functionality
             scrollButton.addEventListener('click', openInvitation);
         } else if (window.innerWidth < 960 && introSection.classList.contains('hidden') && !mainContent.classList.contains('hidden')){
             // For smaller screens: Enable Open Invitation button
             introSection.classList.add('fixed', 'inset-0', 'z-50');
-            body.classList.add('overflow-hidden');
+            // body.classList.add('overflow-hidden');
             scrollButton.removeEventListener('click', openInvitation);
 
         } else if (window.innerWidth >= 960 && introSection.classList.contains('hidden') && !mainContent.classList.contains('hidden')){
