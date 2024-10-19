@@ -23,7 +23,8 @@ module.exports = {
         customPrimaryGreen: '#304A4C'
       },
       fontFamily: {
-        garamond: ['EB Garamond', 'serif'],
+        garamond: ['EB Garamond'],
+        fasthand: ['Fasthand'],
       },
     },
   },

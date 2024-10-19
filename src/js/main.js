@@ -50,3 +50,28 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', handleResize);
     handleResize();
 });
+
+let currentIndex1 = 0;
+let currentIndex2 = 0;
+
+function nextSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
+    const totalSlides = carousel.children.length;
+    currentIndex = (currentIndex + 1) % totalSlides;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    if(carouselId === 'carousel1') currentIndex1 = currentIndex;
+    else currentIndex2 = currentIndex;
+}
+
+function prevSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
+    const totalSlides = carousel.children.length;
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    if(carouselId === 'carousel1') currentIndex1 = currentIndex;
+    else currentIndex2 = currentIndex;
+}

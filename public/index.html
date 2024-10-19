@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    
 
     <link href="css/output.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -51,56 +55,179 @@
 
     <main id="main-content" class="hidden lg:block lg:w-1/2 lg:h-screen overflow-y-auto">
         <!-- Section 2: About Pengantin -->
-        <div id="about-pengantin" class="section min-h-screen flex items-start justify-center bg-subtract">
-            <h2 class="text-3xl font-semibold text-gray-700">Kami sekeluarga mengundang Anda ke pernikahan</h2>
-            <div>
+        <div id="about-pengantin" class="section min-h-screen flex flex-col items-center justify-start bg-subtract bg-cover bg-center">
+            <h2 class="font-semibold font-garamond text-customGray">Kami sekeluarga mengundang Anda ke pernikahan</h2>
+            <div class="flex flex-row items-center space-x-4">
+                <h2 class="text-3xl font-semibold text-gray-700">Image</h2>
+                <div>
+                    <h2 class="font-fasthand">Adila Nurul Ilma</h2>
+                    <h2 class="font-garamond text-black"> Putri Pertama Dari Bapak Nursyirwan dan Ibu Karsinah</h2>
+                </div>
 
             </div>
-            <div>
-
+            <h2 class="text-3xl font-semibold text-gray-700">Dan</h2>
+            <div class="flex flex-row items-center space-x-4">
+                <div>
+                    <h2 class="font-fasthand">Rio Rifqi Syah Akbar</h2>
+                    <h2 class="font-garamond text-black">Putri Pertama Dari Bapak Jenindra Kinta Ismawan dan Ibu Astikasari Mahendrani</h2>
+                </div>
+                <h2 class="text-3xl font-semibold text-gray-700">Image</h2>
             </div>
             
         </div>
     
         <!-- Section 3: Our Memories -->
-        <div class="section min-h-screen flex items-start justify-center">
+        <div class="section min-h-screen flex flex-col items-start justify-center">
             <h2 class="text-3xl font-semibold text-gray-700">Our Memories</h2>
             <p class="mt-4 text-lg">Kenang-kenangan semasa kecil dari kedua pasangan</p>
+            <!-- First Carousel -->
+            <div class="w-full max-w-lg overflow-hidden relative">
+                <div id="carousel1" class="flex transition-transform duration-300 ease-in-out">
+                    <img src="image1.jpg" alt="Memory 1" class="w-full">
+                    <img src="image2.jpg" alt="Memory 2" class="w-full">
+                    <img src="image3.jpg" alt="Memory 3" class="w-full">
+                </div>
+                <!-- Carousel buttons -->
+                <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2" onclick="prevSlide('carousel1')">←</button>
+                <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2" onclick="nextSlide('carousel1')">→</button>
+            </div>
+
+            <!-- Second Carousel -->
+            <div class="w-full max-w-lg overflow-hidden relative mt-8">
+                <div id="carousel2" class="flex transition-transform duration-300 ease-in-out">
+                    <img src="image4.jpg" alt="Memory 4" class="w-full">
+                    <img src="image5.jpg" alt="Memory 5" class="w-full">
+                    <img src="image6.jpg" alt="Memory 6" class="w-full">
+                </div>
+                <!-- Carousel buttons -->
+                <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2" onclick="prevSlide('carousel2')">←</button>
+                <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2" onclick="nextSlide('carousel2')">→</button>
+             </div>
         </div>
 
         <!-- Section 4: Duri Info -->
-        <div class="section min-h-screen flex items-center justify-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold text-gray-700">Photo Gallery</h2>
+        <div class="section min-h-screen flex flex-col items-center justify-center">
+            <div>
+                Megamendung
+            </div>
+            <h1>Minggu, 1 Desember 2024</h1>
+            <div>
+                <h1>Akad Nikah</h1>
+                <h1>08:00 - 10:00 WIB</h1>
+            </div>
+            <div>
+                <h1>Resepsi</h1>
+                <h1>13:00 - 16:00 WIB</h1>
+            </div>
+            <div>
+                Line Break
+            </div>
+            <div>
+                <h1>Gedung Lancang Kuning</h1>
+                <h1>Komplek Pertamina Hulu Rokan Duri, Riau</h1>
+            </div>
+            <div>
+                Lihat Peta
+            </div>
+
+            <div>
+                <h1>Akad & Resepsi</h1>
+                <h1>Minggu, 1 Desember 2024</h1>
+                <h1>Save the date</h1>
+                <div>
+                    Countdown
+                </div>
+                <div>
+                    Tambah ke Kalender
+                </div>
             </div>
         </div>
 
         <!-- Section 5: Jogja Info -->
-        <div class="section min-h-screen flex items-center justify-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold text-gray-700">Photo Gallery</h2>
+        <div class="section min-h-screen flex flex-col items-center justify-center">
+            <div>
+                Gunungan
+            </div>
+            <h1>Minggu Wage, 8 Desember 2024</h1>
+            <div>
+                <h1>Ngunduh Mantu</h1>
+                <h1>09:00 - 11:00 WIB</h1>
+            </div>
+            <div>
+                Line Break
+            </div>
+            <div>
+                <h1>Pendopo Tulungo</h1>
+                <h1>Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
+            </div>
+            <div>
+                Lihat Peta
+            </div>
+
+            <div>
+                <h1>Ngunduh Mantu</h1>
+                <h1>Minggu Wage, 8 Desember 2024</h1>
+                <h1>Save the date</h1>
+                <div>
+                    Countdown
+                </div>
+                <div>
+                    Tambah ke Kalender
+                </div>
             </div>
         </div>
 
         <!-- Section 6: Videos -->
-        <div class="section min-h-screen flex items-center justify-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold text-gray-700">Photo Gallery</h2>
+        <div class="section min-h-screen flex flex-col items-center justify-center">
+            <div>
+                Ring Emoji
+            </div>
+            <h1>Our Engagement</h1>
+            <h1>Sabtu, 6 Juli 2024</h1>
+            <div>
+                Video
+            </div>
+
+            <h1>Livestream Akad Nikah</h1>
+            <div>
+                Video
+            </div>
+            <div>
+                Salin Link
             </div>
         </div>
 
         <!-- Section 7: Konfirmasi Kehadiran -->
-        <div class="section min-h-screen flex items-center justify-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold text-gray-700">Photo Gallery</h2>
+        <div class="section min-h-screen flex flex-col items-center justify-center">
+            <h1>Konfirmasi Kehadiran</h1>
+            <h1>Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
+            <div>
+                break
+            </div>
+            <div>
+                Nama Field
+            </div>
+            <h1>Prosesi yang akan dihadiri</h1>
+            <div>
+                Choices
+            </div>
+            <div>
+                Jumlah pax.
+            </div>
+            <div>
+                Konfirmasi
             </div>
         </div>
 
         <!-- Section 8: Amplop Digital -->
-        <div class="section min-h-screen flex items-center justify-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold text-gray-700">Amplop Digital</h2>
-                <p class="mt-4 text-lg">Kehadiran Anda sudah sangat berarti dan cukup membuar kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda</p>
+        <div class="section min-h-screen flex flex-col items-center justify-center">
+            <h1>Amplop Digital</h1>
+            <h1>Kehadiran Anda sudah sangat berarti dan cukup membuat kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda:</h1>
+            <div>
+                Break
+            </div>
+            <div>
+                Salin Rekening Form
             </div>
         </div>
     </main>
