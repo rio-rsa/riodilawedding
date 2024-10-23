@@ -10,7 +10,8 @@ module.exports = {
         'hero-image': "url('/public/assets/megamendung.png')",
         'subtract': "url('/public/assets/Subtract.jpeg')",
         'subtract-green': "url('/public/assets/substractgreen.jpg')",
-        'polaroid': "url('/public/assets/polaroid.png')"
+        'polaroid': "url('/public/assets/polaroid.png')",
+        'jogja': "url('/public/assets/jogjabackground.png')"
       },
       width: {
         '9/10': '90%',

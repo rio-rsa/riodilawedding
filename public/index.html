@@ -175,11 +175,9 @@
                     <h1 class="font-garamond">Komplek Pertamina Hulu Rokan Duri, Riau</h1>
                 </div>
                 <!-- Button -->
-                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="openGoogleMaps()">
+                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="openGoogleMapsDuri()">
                     Lihat Peta
                 </button>
-
-                
             </div>
             <!-- Main Image -->
             <img src="/public/assets/durioval.png" class="absolute w-9/10 h-9/10 mt-4 z-0">
@@ -190,102 +188,146 @@
             <h1 class="font-garamond text-3xl">Akad & Resepsi</h1>
             <h1 class="font-garamond text-white text-2xl">Minggu, 1 Desember 2024</h1>
             <h1 class="font-fasthand text-white text-2xl">Save the date</h1>
-            <div class="countdown-grid flex flex-row justify-evenly w-3/5">
+            <div class="duri-countdown-grid flex flex-row justify-evenly w-3/5">
                 <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
-                    <p id="days" class="font-fasthand text-center">00</p>
+                    <p id="duriDays" class="font-fasthand text-center">00</p>
                     <p class="font-garamond text-center">Days</p>
                 </div>
                 <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
-                    <p id="hours" class="font-fasthand text-center">00</p>
+                    <p id="duriHours" class="font-fasthand text-center">00</p>
                     <p class="font-garamond text-center">Hours</p>
                 </div>
                 <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
-                    <p id="minutes" class="font-fasthand text-center">00</p>
+                    <p id="duriMinutes" class="font-fasthand text-center">00</p>
                     <p class="font-garamond text-center">Mins</p>
                 </div>
                 <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
-                    <p id="seconds" class="font-fasthand text-center">00</p>
+                    <p id="duriSeconds" class="font-fasthand text-center">00</p>
                     <p class="font-garamond text-center">Secs</p>
                 </div>
             </div>
-            <button class="text-lg text-white bg-customLightGreen my-6 px-8 py-4 rounded-full font-garamond" onclick="openGoogleMaps()">
+            <button class="text-lg text-white bg-customLightGreen my-6 px-8 py-4 rounded-full font-garamond" onclick="addToCalendarDuri()">
                 Tambah Ke Kalender
             </button>
         </div>
         <!-- Section 5: Jogja Info -->
-        <div class="section min-h-screen flex flex-col items-center justify-center">
-            <div>
-                Gunungan
-            </div>
-            <h1>Minggu Wage, 8 Desember 2024</h1>
-            <div>
-                <h1>Ngunduh Mantu</h1>
-                <h1>09:00 - 11:00 WIB</h1>
-            </div>
-            <div>
-                Line Break
-            </div>
-            <div>
-                <h1>Pendopo Tulungo</h1>
-                <h1>Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
-            </div>
-            <div>
-                Lihat Peta
-            </div>
-
-            <div>
-                <h1>Ngunduh Mantu</h1>
-                <h1>Minggu Wage, 8 Desember 2024</h1>
-                <h1>Save the date</h1>
+        <div class="section min-h-screen flex flex-col items-center justify-center bg-jogja bg-cover bg-center">
+            <div class="z-10 flex flex-col items-center justify-center">
+                <img src="/public/assets/gunungan.png">
+                <h1 class="font-fasthand text-2xl">Minggu Wage, 8 Desember 2024</h1>
                 <div>
-                    Countdown
+                    <h1 class="font-garamond font-bold">Ngunduh Mantu</h1>
+                    <h1 class="font-garamond">09:00 - 11:00 WIB</h1>
                 </div>
+                <img src="/public/assets/linebreak.png">
                 <div>
-                    Tambah ke Kalender
+                    <h1 class="font-garamond font-bold">Pendopo Tulungo</h1>
+                    <h1 class="font-garamond">Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
                 </div>
+                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="openGoogleMapsJogja()">
+                    Lihat Peta
+                </button>
             </div>
+        <img src="/public/assets/jogjaoval.png" class="absolute w-9/10 h-9/10 mt-4 z-0">
         </div>
 
+        <div class="flex flex-col items-center justify-center bg-customDarkGreen">
+            <h1 class="font-garamond text-3xl">Ngunduh Mantu</h1>
+            <h1 class="font-garamond text-white text-2xl">Minggu Wage, 8 Desember 2024</h1>
+            <h1 class="font-fasthand text-white text-2xl">Save the date</h1>
+            <div class="jogja-countdown-grid flex flex-row justify-evenly w-3/5">
+                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
+                    <p id="jogjaDays" class="font-fasthand text-center">00</p>
+                    <p class="font-garamond text-center">Days</p>
+                </div>
+                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
+                    <p id="jogjaHours" class="font-fasthand text-center">00</p>
+                    <p class="font-garamond text-center">Hours</p>
+                </div>
+                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
+                    <p id="jogjaMinutes" class="font-fasthand text-center">00</p>
+                    <p class="font-garamond text-center">Mins</p>
+                </div>
+                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/6">
+                    <p id="jogjaSeconds" class="font-fasthand text-center">00</p>
+                    <p class="font-garamond text-center">Secs</p>
+                </div>
+            </div>
+            <button class="text-lg text-white bg-customLightGreen my-6 px-8 py-4 rounded-full font-garamond" onclick="addToCalendarJogja()">
+                Tambah Ke Kalender
+            </button>
+        </div>
         <!-- Section 6: Videos -->
-        <div class="section min-h-screen flex flex-col items-center justify-center">
-            <div>
-                Ring Emoji
+        <div class="section flex flex-col items-center justify-start">
+            <div class=" w-full bg-subtract bg-cover bg-center flex flex-col items-center justify-center">
+                <img src="/public/assets/ring.png">
+                
+                <h1 class="font-fasthand text-2xl">Our Engagement</h1>
+                <h1 class="font-garamond">Sabtu, 6 Juli 2024</h1>
+                <div class="my-4 flex items-center justify-center">
+                    <video controls class="w-9/10 rounded-lg">
+                        <source src="/public/assets/engagement.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>            
+                </div>
             </div>
-            <h1>Our Engagement</h1>
-            <h1>Sabtu, 6 Juli 2024</h1>
-            <div>
-                Video
-            </div>
-
-            <h1>Livestream Akad Nikah</h1>
-            <div>
-                Video
-            </div>
-            <div>
-                Salin Link
+            
+            <div class=" w-full bg-subtract-green bg-cover bg-center flex flex-col items-center justify-center">
+                <h1 class="font-fasthand text-2xl">Livestream Akad Nikah</h1>
+                <div>
+                    Video
+                </div>
+                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">
+                    Salin Link
+                </button>
             </div>
         </div>
 
         <!-- Section 7: Konfirmasi Kehadiran -->
-        <div class="section min-h-screen flex flex-col items-center justify-center">
-            <h1>Konfirmasi Kehadiran</h1>
-            <h1>Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
-            <div>
-                break
+        <div class="section min-h-screen flex flex-col items-center justify-center bg-hero-image bg-cover bg-center">
+            <div class="z-10 flex flex-col items-center justify-center w-4/5">
+                <h1 class="text-2xl font-fasthand">Konfirmasi Kehadiran</h1>
+                <h1 class="font-garamond text-center">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
+                <img src="/public/assets/linebreak.png">
+                <!-- Name Field -->
+                <div class="mb-4 w-4/5">
+                    <label for="name" class="block text-lg font-garamond">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
+                </div>
+                <!-- Event Checkboxes -->
+                <div class="mb-4 w-4/5">
+                    <label class="block text-lg font-garamond">Prosesi yang akan dihadiri</label>
+                    <div class="flex flex-col mt-2">
+                        <label>
+                            <input type="checkbox" name="events" value="ceremony">
+                                Akad Nikah
+                        </label>
+                        <label>
+                            <input type="checkbox" name="events" value="reception">
+                                Resepsi
+                        </label>
+                        <label>
+                            <input type="checkbox" name="events" value="afterparty">
+                                Ngunduh Mantu
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pax Counter -->
+                <div class="mb-4">
+                    <label for="pax" class="block text-lg font-medium">Jumlah Pax.</label>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="decreasePax()">-</button>
+                        <input type="text" id="pax" name="pax" value="1" class="w-12 text-center border border-gray-300 rounded" readonly>
+                        <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="increasePax()">+</button>
+                    </div>
+                </div>
+                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">
+                    Konfirmasi
+                </button>
             </div>
-            <div>
-                Nama Field
-            </div>
-            <h1>Prosesi yang akan dihadiri</h1>
-            <div>
-                Choices
-            </div>
-            <div>
-                Jumlah pax.
-            </div>
-            <div>
-                Konfirmasi
-            </div>
+            
+        <img src="/public/assets/konfirmasioval.png" class="absolute w-9/10 h-9/10 mt-4 z-0">
         </div>
 
         <!-- Section 8: Amplop Digital -->
