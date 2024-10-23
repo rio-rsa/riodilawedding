@@ -4,6 +4,9 @@ node_modules/
 # Tailwind CSS output files (if you don't want to commit them)
 public/css/output.css
 
+# Engagement Video
+public/assets/ENGAGEMENT.MP$
+
 # Build output (if you're using a build tool)
 dist/
 
