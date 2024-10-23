@@ -8,7 +8,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-image': "url('/public/assets/megamendung.png')",
-        'subtract': "url('/public/assets/Subtract.jpeg')"
+        'subtract': "url('/public/assets/Subtract.jpeg')",
+        'subtract-green': "url('/public/assets/substractgreen.jpg')",
+        'polaroid': "url('/public/assets/polaroid.png')"
       },
       width: {
         '9/10': '90%',
@@ -20,7 +22,9 @@ module.exports = {
         customGray: '#5E5A5A',
         customGreen: '#304A4C',
         customBlack: '#282828',
-        customPrimaryGreen: '#304A4C'
+        customPrimaryGreen: '#304A4C',
+        customDarkGreen: '#2F3F36',
+        customLightGreen: '#748C7D'
       },
       fontFamily: {
         garamond: ['EB Garamond'],

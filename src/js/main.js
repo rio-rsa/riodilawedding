@@ -75,3 +75,44 @@ function prevSlide(carouselId) {
     if(carouselId === 'carousel1') currentIndex1 = currentIndex;
     else currentIndex2 = currentIndex;
 }
+
+function openGoogleMaps() {
+    // Use Google Maps URL scheme to open Google Maps
+    const url = "https://maps.app.goo.gl/xfDWegCDjTzDt1vs5"; // Replace with desired coordinates or location
+    window.open(url, '_blank');  // Open in a new tab
+}
+
+// Set the date for the wedding in UTC (replace with your wedding date in UTC)
+const weddingUTC = Date.UTC(2024, 11, 1, 1, 0, 0);  // Dec 1, 2024, 01:00:00 UTC
+console.log("WEDDING UTC (in milliseconds):", weddingUTC);
+
+function updateCountdown() {
+    // Get current local time and convert to UTC
+    const now = new Date();
+
+    // Convert the current local time to UTC in milliseconds
+    const nowUTC = now.getTime();
+
+    // Calculate the difference in milliseconds
+    const timeDifference = weddingUTC - nowUTC;
+
+    // Calculate days, hours, minutes, and seconds remaining
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Update the countdown boxes
+    document.getElementById('days').textContent = String(days).padStart(2, '0');
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+    // If the countdown is over, display a message
+    if (timeDifference < 0) {
+        document.querySelector('.countdown-grid').innerHTML = '<p>The event has started!</p>';
+    }
+}
+
+// Update countdown every second
+setInterval(updateCountdown, 1000);
