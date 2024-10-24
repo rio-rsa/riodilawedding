@@ -6,13 +6,15 @@ command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
 
-# Ensure Node.js and npm are installed
-if ! command_exists node || ! command_exists npm; then
-    echo "Node.js and npm are required but not installed. Installing..."
-    curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-fi
+echo "Navigating to the project directory..."
+cd /var/www/html/riodilawedding || { echo "Failed to navigate to project directory"; exit 1; }
 
+# Ensure Node.js and npm are installed using apt
+if ! command_exists node || ! command_exists npm; then
+    echo "Node.js and npm are required but not installed. Installing with apt..."
+    sudo apt update
+    sudo apt install -y nodejs npm
+fi
 # Ensure npx (comes with npm) is available
 if ! command_exists npx; then
     echo "npx is not available. Installing npm globally..."
@@ -24,9 +26,6 @@ if ! [ -d "node_modules/tailwindcss" ]; then
     echo "Tailwind CSS is not installed. Installing it locally..."
     npm install tailwindcss
 fi
-
-echo "Navigating to the project directory..."
-cd /var/www/html/riodilawedding || { echo "Failed to navigate to project directory"; exit 1; }
 
 echo "Pulling latest changes from the GitHub repository..."
 git pull origin main || { echo "Git pull failed"; exit 1; }
