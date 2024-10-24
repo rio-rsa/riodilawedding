@@ -1,0 +1,7 @@
+[
+  {
+    "id": "github-webhook",
+    "execute-command": "/var/www/html/riodilawedding/update-and-build.sh",
+    "command-working-directory": "/var/www/html/riodilawedding"
+  }
+]
