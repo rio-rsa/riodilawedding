@@ -1,9 +1,6 @@
 #!/bin/bash
 set -x  # Enable debugging
 
-# Redirect both stdout and stderr to a log file
-exec > /var/log/update-and-build.log 2>&1
-
 echo "Navigating to the project directory..."
 cd /var/www/html/riodilawedding || { echo "Failed to navigate to project directory"; exit 1; }
 
