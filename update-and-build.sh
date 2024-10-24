@@ -11,4 +11,3 @@ echo "Running Tailwind CSS build..."
 npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css || { echo "Tailwind build failed"; exit 1; }
 
 echo "Script executed successfully"
-
