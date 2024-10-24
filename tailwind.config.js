@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-image': "url('/public/assets/megamendung.png')",
-        'subtract': "url('/public/assets/Subtract.jpeg')",
-        'subtract-green': "url('/public/assets/substractgreen.jpg')",
-        'polaroid': "url('/public/assets/polaroid.png')",
-        'jogja': "url('/public/assets/jogjabackground.png')"
+        'hero-image': "url('/assets/megamendung.png')",
+        'subtract': "url('/assets/Subtract.jpeg')",
+        'subtract-green': "url('/assets/substractgreen.jpg')",
+        'polaroid': "url('/assets/polaroid.png')",
+        'jogja': "url('/assets/jogjabackground.png')"
       },
       width: {
         '9/10': '90%',
