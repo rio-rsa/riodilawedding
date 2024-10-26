@@ -11,7 +11,8 @@ module.exports = {
         'subtract': "url('/assets/Subtract.jpeg')",
         'subtract-green': "url('/assets/substractgreen.jpg')",
         'polaroid': "url('/assets/polaroid.png')",
-        'jogja': "url('/assets/jogjabackground.png')"
+        'jogja': "url('/assets/jogjabackground.png')",
+        'amplopdigital': "url('/assets/amplopdigitalframe.svg')"
       },
       width: {
         '9/10': '90%',

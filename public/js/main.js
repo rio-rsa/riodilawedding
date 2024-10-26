@@ -172,3 +172,48 @@ function addToCalendarJogja() {
     }
 }
 
+const bankData = {
+    anz: {
+        name: "ANZ",
+        accountNumber: "1234567890",
+        accountHolder: "Rio Akbar"
+    },
+    mandiri: {
+        name: "Mandiri",
+        accountNumber: "0987654321",
+        accountHolder: "Adila Ilma"
+    },
+    bni: {
+        name: "BNI",
+        accountNumber: "1122334455",
+        accountHolder: "Nama Pemilik BNI"
+    }
+};
+
+function showBankDetails() {
+    const selectedBank = document.getElementById("bankSelect").value;
+    const bankDetails = document.getElementById("bankDetails");
+
+    if (selectedBank && bankData[selectedBank]) {
+        document.getElementById("bankName").textContent = bankData[selectedBank].name;
+        document.getElementById("accountNumber").textContent = bankData[selectedBank].accountNumber;
+        document.getElementById("accountHolder").textContent = bankData[selectedBank].accountHolder;
+        bankDetails.classList.remove("hidden");
+    } else {
+        bankDetails.classList.add("hidden");
+    }
+}
+
+function copyBankDetails() {
+    const bankName = document.getElementById("bankName").textContent;
+    const accountNumber = document.getElementById("accountNumber").textContent;
+    const accountHolder = document.getElementById("accountHolder").textContent;
+    
+    const details = `${accountNumber}`;
+    
+    navigator.clipboard.writeText(details).then(() => {
+        alert("Informasi rekening berhasil disalin!");
+    }).catch(() => {
+        alert("Gagal menyalin informasi rekening.");
+    });
+}
