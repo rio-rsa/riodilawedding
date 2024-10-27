@@ -12,7 +12,10 @@ module.exports = {
         'subtract-green': "url('/assets/substractgreen.jpg')",
         'polaroid': "url('/assets/polaroid.png')",
         'jogja': "url('/assets/jogjabackground.png')",
-        'amplopdigital': "url('/assets/amplopdigitalframe.svg')"
+        'amplopdigital': "url('/assets/amplopdigitalframe.svg')",
+        'durioval': "url('/assets/durioval.png')",
+        'jogjaoval': "url('/assets/jogjaoval.png')",
+        'konfirmasioval': "url('/assets/konfirmasioval.png')"
       },
       width: {
         '9/10': '90%',
