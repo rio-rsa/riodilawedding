@@ -35,6 +35,9 @@ module.exports = {
         garamond: ['EB Garamond'],
         fasthand: ['Fasthand'],
       },
+      letterSpacing: {
+        'intro': '0.26325rem' 
+      }
     },
   },
   plugins: [],
