@@ -13,6 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
     }
 
+    function handleTouchFeedback() {
+        // Mobile-specific visual feedback on touch
+        scrollButton.addEventListener('touchstart', () => {
+            scrollButton.classList.remove('bg-customPrimaryGreen');
+            scrollButton.classList.add('bg-customLightGreen'); // Adds darker background color
+        });
+
+        scrollButton.addEventListener('touchend', () => {
+            scrollButton.classList.remove('bg-customLightGreen'); // Reverts to original color
+            scrollButton.classList.add('bg-customPrimaryGreen');
+        });
+    }
+
     function handleResize() {
         if (window.innerWidth >= 960 && !introSection.classList.contains('hidden') && mainContent.classList.contains('hidden')) {
             // For larger screens: Show both sections side by side
@@ -21,28 +34,30 @@ document.addEventListener('DOMContentLoaded', function() {
             mainContent.classList.remove('hidden');
             body.classList.remove('overflow-hidden');
             scrollButton.removeEventListener('click', openInvitation);
-
+            scrollButton.removeEventListener('touchstart', handleTouchFeedback);
         } else if (window.innerWidth < 960 && !introSection.classList.contains('hidden') && mainContent.classList.contains('hidden')) {
             // For smaller screens: Enable Open Invitation button
             introSection.classList.add('fixed', 'inset-0', 'z-50');
             // body.classList.add('overflow-hidden');
-
+            
             // Mobile-specific "Open Invitation" functionality
             scrollButton.addEventListener('click', openInvitation);
+            handleTouchFeedback();
         } else if (window.innerWidth < 960 && introSection.classList.contains('hidden') && !mainContent.classList.contains('hidden')){
             // For smaller screens: Enable Open Invitation button
             introSection.classList.add('fixed', 'inset-0', 'z-50');
             // body.classList.add('overflow-hidden');
             scrollButton.removeEventListener('click', openInvitation);
-
+            scrollButton.removeEventListener('touchstart', handleTouchFeedback);
         } else if (window.innerWidth >= 960 && introSection.classList.contains('hidden') && !mainContent.classList.contains('hidden')){
             introSection.classList.remove('fixed', 'inset-0', 'z-50', 'hide');
             introSection.classList.add('relative', 'lg:flex');
             scrollButton.removeEventListener('click', openInvitation);
-
+            scrollButton.removeEventListener('touchstart', handleTouchFeedback);
         } else if (window.innerWidth < 960 && !introSection.classList.contains('hidden') && !mainContent.classList.contains('hidden')){
             mainContent.classList.add('hidden');
             scrollButton.addEventListener('click', openInvitation);
+            handleTouchFeedback();
         }
     }
 
