@@ -15,8 +15,8 @@ module.exports = {
         'polaroid': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291360/polaroid_qpn2p2.png')",
         'jogja': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291347/jogjabackground_jx9dgh.png')",
         'amplopdigital': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362802/amplopdigitalframe_g9zgrr.png')",
-        'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_kiulei.png')",
-        'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_kw2r76.png')",
+        'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_ik4evp.png')",
+        'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_uezv4h.png')",
         'konfirmasioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/konfirmasioval_mvfhdc.png')"
       },
       width: {
