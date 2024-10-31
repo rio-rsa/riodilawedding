@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-image': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291358/megamendung_xov04r.svg')",
-        'subtract': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291362/Subtract_n6gr9l.jpg')",
+        'subtract': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730382489/subtract_tvrj1p.png')",
         'subtract-modified': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291383/Subtract-modified_mjxvzz.png')",
         'subtract-modified-horizontal': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730358806/Subtract-modified-horizontal_jjlhmq.png')",
         'subtract-green': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362545/subtractgreen_jplf7p.png')",
@@ -32,7 +32,8 @@ module.exports = {
         customBlack: '#282828',
         customPrimaryGreen: '#304A4C',
         customDarkGreen: '#2F3F36',
-        customLightGreen: '#748C7D'
+        customLightGreen: '#748C7D',
+        customIntroGreen: '#3F4F70'
       },
       fontFamily: {
         garamond: ['EB Garamond'],
