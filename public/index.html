@@ -14,40 +14,34 @@
 <body id="body" class="lg:overflow-auto lg:flex lg:flex-row">
     <!-- Section 1: Introduction -->
     <div id="intro-section" class=" section min-h-dvh flex items-start justify-center bg-no-repeat bg-hero-image bg-cover bg-center overflow-y-auto">
-        <div class="flex flex-col items-center w-9/10z-10 my-10 pb-10 bg-subtract-modified bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10">
-            <!-- Stack of Texts above the image -->
+        <div class="flex flex-col items-center w-9/10 z-10 my-10 pb-10 bg-subtract-modified bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:flex-row lg:bg-subtract-modified-horizontal lg:min-h-[80vh] lg:p-0 lg:justify-center lg:my-auto">
             <div class="flex flex-col items-center space-y-2 mt-4">
-                <p class="text-customGray px-4 py-2 font-garamond font-normal text-lg tracking-wider">you are invited to</p>
-                <p class="text-customGreen px-4 text-lg font-garamond font-semibold tracking-intro">THE WEDDING OF</p>
+                <p class="text-customGray px-4 py-2 font-garamond font-normal text-lg tracking-wider lg:hidden">you are invited to</p>
+                <p class="text-customGreen px-4 text-lg font-garamond font-semibold tracking-intro lg:px-0">THE WEDDING OF</p>
             </div>
-            <!-- Photo Collage Section: EASIER TO JUST MAKE THE COLLAGE AND EXPORT AS 1 PHOTO + THE NAMES AND THEN USE THAT 1 IMAGE (MORE RESPONSIVE) -->
-            <div class="w-full h-2/5 mx-auto mt-4">
-                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/v1730291347/introimage_sczogq.png" class="h-full mx-auto" loading="lazy" decoding="async">
+            <div class="w-full h-2/5 mx-auto mt-4 lg:h-full lg:w-1/2 lg:my-auto lg:mx-0 lg:flex lg:items-center">
+                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291347/introimagemobile_hbigdv.png" class="w-9/10 mx-auto lg:h-4/5 lg:w-auto" loading="lazy" decoding="async">
             </div>
-            <!-- Event Date and Venue -->
             <div class="flex flex-col items-center space-y-6 mt-4">
-                <p class="text-customGreen px-4 font-garamond font-semibold text-lg tracking-intro">01.12.2024</p>
-                <p class="text-customBlack px-4 font-garamond font-normal text-lg tracking-wider text-center">Gedung Lancang Kuning Duri</p>
-                <img src="/assets/line.png" loading="lazy" decoding="async">
+                <p class="text-customGreen px-4 font-garamond font-semibold text-lg tracking-intro lg:px-0 lg:text-xl">01.12.2024</p>
+                <p class="text-customBlack px-4 font-garamond font-normal text-lg tracking-wider text-center lg:px-0 lg:text-xl">Gedung Lancang Kuning Duri</p>
+                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291348/line_rxratl.png" loading="lazy" decoding="async">
             </div>
-            <!-- Button -->
-            <button id="scroll-btn" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 mt-4 rounded-full font-garamond tracking-wider font-normal">
+            <button id="scroll-btn" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 mt-4 rounded-full font-garamond tracking-wider font-normal lg:hidden">
                 Open Invitation
             </button>          
         </div>
-        <!-- Main Image -->
-        <!-- <img src="/assets/Subtract-modified.png" alt="Dila & Rio" class="absolute w-9/10 h-9/10 mt-4 z-0"> -->
     </div>
 
-    <main id="main-content" class="hidden lg:block lg:w-1/2 lg:h-screen overflow-y-auto">
+    <main id="main-content" class="hidden lg:block">
         <!-- Section 2: About Pengantin -->
         <div id="about-pengantin" class="section min-h-screen flex flex-col items-center justify-evenly bg-subtract bg-cover bg-center">
             <h2 class="text-xl font-garamond text-customGray italic text-center w-3/5">Kami sekeluarga mengundang Anda ke pernikahan</h2>
             <div class="flex flex-row items-center space-x-4">
                 <div class="w-[40vh] h-[45vh] relative">
-                    <img src="/assets/page2photo.png" class="absolute left-0 z-10">
-                    <img src="/assets/flowervector.png" class="absolute left-0 top-1 z-20"> 
-                    <img src="/assets/inkfeathervector.png" class="absolute left-4 z-20">
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364126/dilaintro_pmhqni.png" class="absolute left-0 z-10">
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291345/flowervector_objqk8.png" class="absolute left-0 top-1 z-20"> 
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291347/inkfeathervector_mulkxi.png" class="absolute left-4 z-20">
                 </div>
                 <div>
                     <h2 class="font-fasthand">Adila Nurul Ilma</h2>
@@ -62,9 +56,9 @@
                     <h2 class="font-garamond text-black">Putri Pertama Dari Bapak Jenindra Kinta Ismawan dan Ibu Astikasari Mahendrani</h2>
                 </div>
                 <div class="w-[40vh] h-[45vh] relative">
-                    <img src="/assets/page2photorio.png" class="absolute right-0 z-10">
-                    <img src="/assets/flower2vector.png" class="absolute right-0 top-1 z-20"> 
-                    <img src="/assets/planevector.png" class="absolute right-4 z-20">
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364128/riointro_fhjdbf.png" class="absolute right-0 z-10">
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291344/flower2vector_viriel.png" class="absolute right-0 top-1 z-20"> 
+                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291353/planevector_tkhjeu.png" class="absolute right-4 z-20">
                 </div>
             </div>
             
@@ -341,7 +335,6 @@
         </div>
     </main>
     
-
 
 <script src="/js/main.js" defer></script>
 </body>

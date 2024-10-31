@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         introSection.classList.add('hidden');
         mainContent.classList.remove('hidden');
         body.classList.remove('overflow-hidden');
+        setTimeout(() => {
+            window.scrollTo(0, 0); 
+        }, 10);
     }, 500);
     }
 
