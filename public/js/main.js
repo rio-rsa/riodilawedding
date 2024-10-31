@@ -1,3 +1,16 @@
+// document.addEventListener('DOMContentLoaded', function() {
+//     const root = document.documentElement;
+//     const baselineFontSize = 16; // Your target base size in px
+
+//     const currentFontSize = parseFloat(window.getComputedStyle(root).fontSize);
+    
+//     if (currentFontSize !== baselineFontSize) {
+//         root.style.fontSize = `${baselineFontSize}px`;
+//     }
+// });
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const scrollButton = document.getElementById('scroll-btn');
     const introSection = document.getElementById('intro-section');
@@ -32,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
             introSection.classList.remove('fixed', 'inset-0', 'z-50', 'hide');
             introSection.classList.add('relative', 'lg:flex');
             mainContent.classList.remove('hidden');
-            body.classList.remove('overflow-hidden');
+            // body.classList.remove('overflow-hidden');
             scrollButton.removeEventListener('click', openInvitation);
             scrollButton.removeEventListener('touchstart', handleTouchFeedback);
         } else if (window.innerWidth < 960 && !introSection.classList.contains('hidden') && mainContent.classList.contains('hidden')) {
             // For smaller screens: Enable Open Invitation button
-            introSection.classList.add('fixed', 'inset-0', 'z-50');
+            introSection.classList.add('fixed', 'inset-0', 'z-50', 'overflow-y-auto');
             // body.classList.add('overflow-hidden');
             
             // Mobile-specific "Open Invitation" functionality

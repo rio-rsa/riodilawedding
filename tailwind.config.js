@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-image': "url('/assets/megamendung.png')",
+        'hero-image': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/v1730291358/megamendung_upeefw.svg')",
         'subtract': "url('/assets/Subtract.jpeg')",
+        'subtract-modified': "url('/assets/Subtract-modified.png')",
         'subtract-green': "url('/assets/substractgreen.jpg')",
         'polaroid': "url('/assets/polaroid.png')",
         'jogja': "url('/assets/jogjabackground.png')",

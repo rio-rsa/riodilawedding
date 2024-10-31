@@ -11,32 +11,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dila & Rio 2024</title>
 </head>
-<body id="body" class="overflow-hidden lg:overflow-auto lg:flex lg:flex-row">
+<body id="body" class="lg:overflow-auto lg:flex lg:flex-row">
     <!-- Section 1: Introduction -->
-    <div id="intro-section" class=" section h-dvh flex items-start justify-center bg-no-repeat bg-hero-image bg-cover bg-center">
-        <div class="flex flex-col items-center w-9/10 h-9/10 space-y-6 z-10 mt-10">
+    <div id="intro-section" class=" section min-h-dvh flex items-start justify-center bg-no-repeat bg-hero-image bg-cover bg-center overflow-y-auto">
+        <div class="flex flex-col items-center w-9/10z-10 my-10 pb-10 bg-subtract-modified bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10">
             <!-- Stack of Texts above the image -->
-            <div class="flex flex-col items-center space-y-2">
+            <div class="flex flex-col items-center space-y-2 mt-4">
                 <p class="text-customGray px-4 py-2 font-garamond font-normal text-lg tracking-wider">you are invited to</p>
                 <p class="text-customGreen px-4 text-lg font-garamond font-semibold tracking-intro">THE WEDDING OF</p>
             </div>
             <!-- Photo Collage Section: EASIER TO JUST MAKE THE COLLAGE AND EXPORT AS 1 PHOTO + THE NAMES AND THEN USE THAT 1 IMAGE (MORE RESPONSIVE) -->
-            <div class="w-full h-2/5 mx-auto">
-                <img src="/assets/introimage.png" class="h-full mx-auto">
+            <div class="w-full h-2/5 mx-auto mt-4">
+                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/v1730291347/introimage_sczogq.png" class="h-full mx-auto" loading="lazy" decoding="async">
             </div>
             <!-- Event Date and Venue -->
-            <div class="flex flex-col items-center space-y-2">
+            <div class="flex flex-col items-center space-y-6 mt-4">
                 <p class="text-customGreen px-4 font-garamond font-semibold text-lg tracking-intro">01.12.2024</p>
-                <p class="text-customBlack px-4 font-garamond font-normal text-lg tracking-wider">Gedung Lancang Kuning Duri</p>
-                <img src="/assets/line.png">
+                <p class="text-customBlack px-4 font-garamond font-normal text-lg tracking-wider text-center">Gedung Lancang Kuning Duri</p>
+                <img src="/assets/line.png" loading="lazy" decoding="async">
             </div>
             <!-- Button -->
-            <button id="scroll-btn" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond tracking-wider font-normal">
+            <button id="scroll-btn" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 mt-4 rounded-full font-garamond tracking-wider font-normal">
                 Open Invitation
             </button>          
         </div>
         <!-- Main Image -->
-        <img src="/assets/Subtract-modified.png" alt="Dila & Rio" class="absolute w-9/10 h-9/10 mt-4 z-0">
+        <!-- <img src="/assets/Subtract-modified.png" alt="Dila & Rio" class="absolute w-9/10 h-9/10 mt-4 z-0"> -->
     </div>
 
     <main id="main-content" class="hidden lg:block lg:w-1/2 lg:h-screen overflow-y-auto">
