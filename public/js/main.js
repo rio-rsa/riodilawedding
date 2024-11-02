@@ -89,14 +89,12 @@ function nextSlide(carouselId) {
     const carousel = document.getElementById(carouselId);
     let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
     const totalSlides = carousel.children.length;
-    
-    // Each item is 60% of the container width (or 3/5)
-    const slideWidthPercentage = 60;
+    const slideWidth = carousel.clientWidth * 0.6;
 
     // Check if we're at the last slide; if so, do nothing
     if (currentIndex < totalSlides - 1) {
         currentIndex += 1;
-        carousel.style.transform = `translateX(-${currentIndex * slideWidthPercentage}%)`;
+        carousel.scrollLeft = currentIndex * slideWidth;
     }
 
     if (carouselId === 'carousel1') currentIndex1 = currentIndex;
@@ -107,20 +105,35 @@ function prevSlide(carouselId) {
     const carousel = document.getElementById(carouselId);
     let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
     const totalSlides = carousel.children.length;
-    
-    // Each item is 60% of the container width (or 3/5)
-    const slideWidthPercentage = 60;
+    const slideWidth = carousel.clientWidth * 0.6;
 
     // Check if we're at the first slide; if so, do nothing
     if (currentIndex > 0) {
         currentIndex -= 1;
-        carousel.style.transform = `translateX(-${currentIndex * slideWidthPercentage}%)`;
+        carousel.scrollLeft = currentIndex * slideWidth;
     }
 
     if (carouselId === 'carousel1') currentIndex1 = currentIndex;
     else currentIndex2 = currentIndex;
 }
 
+// Function to sync currentIndex with manual scroll for any carousel
+function addScrollSync(carouselId, currentIndexVar) {
+    const carousel = document.getElementById(carouselId);
+    const slideWidth = carousel.clientWidth * 0.6;
+    
+    carousel.addEventListener('scroll', () => {
+        if (carouselId === 'carousel1') {
+            currentIndex1 = Math.round(carousel.scrollLeft / slideWidth);
+        } else if (carouselId === 'carousel2') {
+            currentIndex2 = Math.round(carousel.scrollLeft / slideWidth);
+        }
+    });
+}
+
+// Apply scroll sync to both carousels
+addScrollSync('carousel1', currentIndex1);
+addScrollSync('carousel2', currentIndex2);
 
 
 function openGoogleMapsDuri() {

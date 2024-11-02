@@ -41,3 +41,10 @@
 .min-h-dvh {
   min-height: 100vh;
 }
+
+#carousel1,
+#carousel2 {
+    overflow-x: scroll; /* Enables horizontal scrolling with the scrollbar */
+    white-space: nowrap;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
