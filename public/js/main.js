@@ -89,10 +89,17 @@ function nextSlide(carouselId) {
     const carousel = document.getElementById(carouselId);
     let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
     const totalSlides = carousel.children.length;
-    currentIndex = (currentIndex + 1) % totalSlides;
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
     
-    if(carouselId === 'carousel1') currentIndex1 = currentIndex;
+    // Each item is 60% of the container width (or 3/5)
+    const slideWidthPercentage = 60;
+
+    // Check if we're at the last slide; if so, do nothing
+    if (currentIndex < totalSlides - 1) {
+        currentIndex += 1;
+        carousel.style.transform = `translateX(-${currentIndex * slideWidthPercentage}%)`;
+    }
+
+    if (carouselId === 'carousel1') currentIndex1 = currentIndex;
     else currentIndex2 = currentIndex;
 }
 
@@ -100,12 +107,21 @@ function prevSlide(carouselId) {
     const carousel = document.getElementById(carouselId);
     let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
     const totalSlides = carousel.children.length;
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
     
-    if(carouselId === 'carousel1') currentIndex1 = currentIndex;
+    // Each item is 60% of the container width (or 3/5)
+    const slideWidthPercentage = 60;
+
+    // Check if we're at the first slide; if so, do nothing
+    if (currentIndex > 0) {
+        currentIndex -= 1;
+        carousel.style.transform = `translateX(-${currentIndex * slideWidthPercentage}%)`;
+    }
+
+    if (carouselId === 'carousel1') currentIndex1 = currentIndex;
     else currentIndex2 = currentIndex;
 }
+
+
 
 function openGoogleMapsDuri() {
     // Use Google Maps URL scheme to open Google Maps

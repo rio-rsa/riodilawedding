@@ -33,7 +33,7 @@ module.exports = {
         customPrimaryGreen: '#304A4C',
         customDarkGreen: '#2F3F36',
         customLightGreen: '#748C7D',
-        customIntroGreen: '#3F4F70'
+        customIntroGreen: '#4D706B'
       },
       fontFamily: {
         garamond: ['EB Garamond'],
