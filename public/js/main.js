@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             scrollButton.removeEventListener('touchstart', handleTouchFeedback);
         } else if (window.innerWidth < 960 && !introSection.classList.contains('hidden') && mainContent.classList.contains('hidden')) {
             // For smaller screens: Enable Open Invitation button
-            introSection.classList.add('fixed', 'inset-0', 'z-50', 'overflow-y-auto');
+            introSection.classList.add('inset-0', 'z-50', 'overflow-y-auto');
             // body.classList.add('overflow-hidden');
             
             // Mobile-specific "Open Invitation" functionality
@@ -82,58 +82,18 @@ document.addEventListener('DOMContentLoaded', function() {
     handleResize();
 });
 
-let currentIndex1 = 0;
-let currentIndex2 = 0;
-
-function nextSlide(carouselId) {
-    const carousel = document.getElementById(carouselId);
-    let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
-    const totalSlides = carousel.children.length;
-    const slideWidth = carousel.clientWidth * 0.6;
-
-    // Check if we're at the last slide; if so, do nothing
-    if (currentIndex < totalSlides - 1) {
-        currentIndex += 1;
-        carousel.scrollLeft = currentIndex * slideWidth;
-    }
-
-    if (carouselId === 'carousel1') currentIndex1 = currentIndex;
-    else currentIndex2 = currentIndex;
-}
-
-function prevSlide(carouselId) {
-    const carousel = document.getElementById(carouselId);
-    let currentIndex = carouselId === 'carousel1' ? currentIndex1 : currentIndex2;
-    const totalSlides = carousel.children.length;
-    const slideWidth = carousel.clientWidth * 0.6;
-
-    // Check if we're at the first slide; if so, do nothing
-    if (currentIndex > 0) {
-        currentIndex -= 1;
-        carousel.scrollLeft = currentIndex * slideWidth;
-    }
-
-    if (carouselId === 'carousel1') currentIndex1 = currentIndex;
-    else currentIndex2 = currentIndex;
-}
-
-// Function to sync currentIndex with manual scroll for any carousel
-function addScrollSync(carouselId, currentIndexVar) {
-    const carousel = document.getElementById(carouselId);
-    const slideWidth = carousel.clientWidth * 0.6;
+function openModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
     
-    carousel.addEventListener('scroll', () => {
-        if (carouselId === 'carousel1') {
-            currentIndex1 = Math.round(carousel.scrollLeft / slideWidth);
-        } else if (carouselId === 'carousel2') {
-            currentIndex2 = Math.round(carousel.scrollLeft / slideWidth);
-        }
-    });
+    modalImage.src = imageSrc;
+    modal.classList.remove('hidden');
 }
 
-// Apply scroll sync to both carousels
-addScrollSync('carousel1', currentIndex1);
-addScrollSync('carousel2', currentIndex2);
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.add('hidden');
+}
 
 
 function openGoogleMapsDuri() {

@@ -48,3 +48,16 @@
     white-space: nowrap;
     scroll-behavior: smooth; /* Smooth scrolling effect */
 }
+
+
+/* Modal styling */
+#imageModal {
+  z-index: 51; /* Ensure it appears above other elements */
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+}
+
+#modalImage {
+  max-width: 90%; /* Adjust as needed for a responsive modal */
+  max-height: 90%;
+  border-radius: 8px;
+}
