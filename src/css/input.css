@@ -37,6 +37,12 @@
     }
 }
 
+@font-face {
+  font-family: 'Handsome Pro';
+  src: url('/assets/Handsome Pro-90.woff') format('woff');
+}
+
+
 /* Custom class for min-height: 100vh */
 .min-h-dvh {
   min-height: 100vh;

@@ -15,12 +15,13 @@ module.exports = {
         'polaroid': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291360/polaroid_qpn2p2.png')",
         'jogja': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291347/jogjabackground_jx9dgh.png')",
         'amplopdigital': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362802/amplopdigitalframe_g9zgrr.png')",
-        'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_ik4evp.png')",
+        'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_fbevhe.png')",
         'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_uezv4h.png')",
         'konfirmasioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/konfirmasioval_mvfhdc.png')"
       },
       width: {
         '9/10': '90%',
+        '7/10': '70%'
       },
       height: {
         '9/10': '90%',
@@ -33,11 +34,13 @@ module.exports = {
         customPrimaryGreen: '#304A4C',
         customDarkGreen: '#2F3F36',
         customLightGreen: '#748C7D',
-        customIntroGreen: '#4D706B'
+        customIntroGreen: '#4D706B',
+        customPolaroidGreen: '#2F3F36'
       },
       fontFamily: {
         garamond: ['EB Garamond'],
         fasthand: ['Fasthand'],
+        handsome: ['Handsome Pro']
       },
       letterSpacing: {
         'intro': '0.26325rem' 
