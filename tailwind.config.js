@@ -24,7 +24,8 @@ module.exports = {
       },
       width: {
         '9/10': '90%',
-        '7/10': '70%'
+        '7/10': '70%',
+        '1/10': '10%'
       },
       height: {
         '9/10': '90%',
@@ -34,6 +35,7 @@ module.exports = {
         customGray: '#5E5A5A',
         customGreen: '#304A4C',
         customBlack: '#282828',
+        customBlackKonfirmasi: '#252A31',
         customPrimaryGreen: '#304A4C',
         customDarkGreen: '#2F3F36',
         customLightGreen: '#748C7D',

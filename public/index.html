@@ -329,12 +329,11 @@
         <!-- Section 6: Videos -->
         <div class="section flex flex-col items-center justify-start">
             <div class=" w-full bg-subtract bg-cover bg-center flex flex-col items-center justify-center">
-                <img src="/assets/ring.png">
-                
-                <h1 class="font-fasthand text-2xl">Our Engagement</h1>
-                <h1 class="font-garamond">Sabtu, 6 Juli 2024</h1>
-                <div class="my-4 flex items-center justify-center">
-                    <iframe class="w-9/10 rounded-lg"
+                <img src="/assets/ring.png" class="w-1/10 my-6">
+                <h1 class="font-fasthand text-5xl text-customIntroGreen tracking-widest">Our Engagement</h1>
+                <h1 class="font-garamond text-3xl my-6 text-customDarkGreen tracking-widest">Sabtu, 6 Juli 2024</h1>
+                <div class="flex items-center justify-center w-9/10 mb-10 h-[40vh]">
+                    <iframe class="w-full rounded-lg h-full"
                             src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
                             title="Our Engagement Video"
                             frameborder="0"
@@ -345,11 +344,17 @@
             </div>
             
             <div class=" w-full bg-subtract-green bg-cover bg-center flex flex-col items-center justify-center">
-                <h1 class="font-fasthand text-2xl">Livestream Akad Nikah</h1>
-                <div>
-                    Video
+                <h1 class="font-fasthand text-white text-5xl tracking-widest my-10">Livestream Akad Nikah</h1>
+                <div class="flex items-center justify-center w-9/10 mb-10 h-[40vh]">
+                    <iframe class="w-full rounded-lg h-full"
+                            src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
+                            title="Livestream Akad Nikah"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>              
                 </div>
-                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">
+                <button class="w-3/5 text-xl tracking-widest text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond mb-10" onclick="">
                     Salin Link
                 </button>
             </div>
@@ -357,36 +362,36 @@
 
         <!-- Section 7: Konfirmasi Kehadiran -->
         <div class="section min-h-screen flex flex-col items-center justify-center bg-hero-image bg-cover bg-center">
-            <div class="z-10 flex flex-col items-center justify-center bg-konfirmasioval bg-no-repeat bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10">
-                <h1 class="text-2xl font-fasthand">Konfirmasi Kehadiran</h1>
-                <h1 class="font-garamond text-center">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
-                <img src="/assets/linebreak.png">
-                <form method="POST" action="" name="rsvp-form">
+            <div class="z-10 flex flex-col items-center justify-center bg-konfirmasioval bg-no-repeat bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:w-7/10 space-y-6 lg:space-y-10">
+                <h1 class="font-fasthand text-2xl lg:text-4xl text-customIntroGreen">Konfirmasi Kehadiran</h1>
+                <h1 class="font-garamond tracking-widest text-lg lg:text-2xl text-customGray text-center">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
+                <img src="/assets/linebreak.svg" class="w-4/5">
+                <form method="POST" action="" name="rsvp-form" class="w-9/10">
                     <!-- Name Field -->
-                    <div class="mb-4 w-4/5">
-                        <label for="name" class="block text-lg font-garamond">Name</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
+                    <div class="mb-4 w-full">
+                        <label for="name" class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded font-garamond tracking-widest" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
                     </div>
                     <!-- Event Checkboxes -->
                     <div class="mb-4 w-4/5">
-                        <label class="block text-lg font-garamond">Prosesi yang akan dihadiri</label>
+                        <label class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Prosesi yang akan dihadiri</label>
                         <div class="flex flex-col mt-2">
-                            <label>
-                                <input type="checkbox" name="akad" value="attending">
+                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
+                                <input type="checkbox" name="akad" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-customDarkGreen checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-no-repeat checked:after:bg-center checked:after:bg-contain checked:after:content-['']">
                                 Akad Nikah
                             </label>
-                            <label>
-                                <input type="checkbox" name="resepsi" value="attending">
+                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
+                                <input type="checkbox" name="resepsi" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-customDarkGreen checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-no-repeat checked:after:bg-center checked:after:bg-contain checked:after:content-['']">
                                 Resepsi
                             </label>
-                            <label>
-                                <input type="checkbox" name="ngunduhmantu" value="attending">
+                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
+                                <input type="checkbox" name="ngunduhmantu" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-customDarkGreen checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-no-repeat checked:after:bg-center checked:after:bg-contain checked:after:content-['']">
                                 Ngunduh Mantu
                             </label>
                         </div>
                     </div>
                     <div class="mb-4">
-                        <label for="pax" class="block text-lg font-medium">Jumlah Pax.</label>
+                        <label for="pax" class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Jumlah Pax.</label>
                         <div class="flex items-center space-x-2 mt-2">
                             <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="decreasePax()">-</button>
                             <input type="text" id="pax" name="pax" value="1" class="w-12 text-center border border-gray-300 rounded" readonly>
