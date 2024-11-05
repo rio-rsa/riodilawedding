@@ -360,44 +360,41 @@
                 <h1 class="text-2xl font-fasthand">Konfirmasi Kehadiran</h1>
                 <h1 class="font-garamond text-center">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
                 <img src="/assets/linebreak.png">
-                <!-- Name Field -->
-                <div class="mb-4 w-4/5">
-                    <label for="name" class="block text-lg font-garamond">Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
-                </div>
-                <!-- Event Checkboxes -->
-                <div class="mb-4 w-4/5">
-                    <label class="block text-lg font-garamond">Prosesi yang akan dihadiri</label>
-                    <div class="flex flex-col mt-2">
-                        <label>
-                            <input type="checkbox" name="events" value="ceremony">
+                <form method="POST" action="" name="rsvp-form">
+                    <!-- Name Field -->
+                    <div class="mb-4 w-4/5">
+                        <label for="name" class="block text-lg font-garamond">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
+                    </div>
+                    <!-- Event Checkboxes -->
+                    <div class="mb-4 w-4/5">
+                        <label class="block text-lg font-garamond">Prosesi yang akan dihadiri</label>
+                        <div class="flex flex-col mt-2">
+                            <label>
+                                <input type="checkbox" name="akad" value="attending">
                                 Akad Nikah
-                        </label>
-                        <label>
-                            <input type="checkbox" name="events" value="reception">
+                            </label>
+                            <label>
+                                <input type="checkbox" name="resepsi" value="attending">
                                 Resepsi
-                        </label>
-                        <label>
-                            <input type="checkbox" name="events" value="afterparty">
+                            </label>
+                            <label>
+                                <input type="checkbox" name="ngunduhmantu" value="attending">
                                 Ngunduh Mantu
-                        </label>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <!-- Pax Counter -->
-                <div class="mb-4">
-                    <label for="pax" class="block text-lg font-medium">Jumlah Pax.</label>
-                    <div class="flex items-center space-x-2 mt-2">
-                        <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="decreasePax()">-</button>
-                        <input type="text" id="pax" name="pax" value="1" class="w-12 text-center border border-gray-300 rounded" readonly>
-                        <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="increasePax()">+</button>
+                    <div class="mb-4">
+                        <label for="pax" class="block text-lg font-medium">Jumlah Pax.</label>
+                        <div class="flex items-center space-x-2 mt-2">
+                            <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="decreasePax()">-</button>
+                            <input type="text" id="pax" name="pax" value="1" class="w-12 text-center border border-gray-300 rounded" readonly>
+                            <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="increasePax()">+</button>
+                        </div>
                     </div>
-                </div>
-                <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">
-                    Konfirmasi
-                </button>
+                    <button type="submit" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">Konfirmasi</button>
+                </form>
             </div>
-            
-        <!-- <img src="/assets/konfirmasioval.png" class="absolute w-9/10 h-9/10 mt-4 z-0"> -->
         </div>
 
         <!-- Section 8: Amplop Digital -->

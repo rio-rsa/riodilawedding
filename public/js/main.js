@@ -237,3 +237,31 @@ function copyBankDetails() {
         alert("Gagal menyalin informasi rekening.");
     });
 }
+
+function increasePax() {
+    const paxInput = document.getElementById("pax");
+    let paxValue = parseInt(paxInput.value, 10);
+    paxInput.value = paxValue + 1;
+}
+
+function decreasePax() {
+    const paxInput = document.getElementById("pax");
+    let paxValue = parseInt(paxInput.value, 10);
+    if (paxValue > 1) { // Prevents going below 1
+        paxInput.value = paxValue - 1;
+    }
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyXT6Izx6mjzESbyUKRnQhcqsDGpKZI7BEIDeAnEGbaBtBtpOq-PAjHqxWdjovT9wQ/exec'
+
+
+const form = document.forms['rsvp-form']
+
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
