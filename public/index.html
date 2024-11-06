@@ -1,459 +1,936 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-    <link href="css/output.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="css/output.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Dila & Rio 2024</title>
-</head>
-<body id="body" class="lg:overflow-auto lg:flex lg:flex-row">
+  </head>
+  <body
+    id="body"
+    class="lg:flex lg:flex-row lg:overflow-auto"
+  >
     <!-- Section 1: Introduction -->
-    <div id="intro-section" class=" section min-h-dvh flex items-start justify-center bg-no-repeat bg-hero-image bg-cover bg-center overflow-y-auto">
-        <div class="flex flex-col items-center w-9/10 z-10 my-10 pb-10 bg-subtract-modified bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:flex-row lg:bg-subtract-modified-horizontal lg:min-h-[80vh] lg:p-0 lg:justify-center lg:my-auto">
-            <div class="flex flex-col items-center space-y-2 mt-4">
-                <p class="text-customGray px-4 py-2 font-garamond font-normal text-lg tracking-wider lg:hidden">you are invited to</p>
-                <p class="text-customGreen px-4 text-lg font-garamond font-semibold tracking-intro lg:px-0">THE WEDDING OF</p>
-            </div>
-            <div class="w-full h-2/5 mx-auto mt-4 lg:h-full lg:w-1/2 lg:my-auto lg:mx-0 lg:flex lg:items-center">
-                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291347/introimagemobile_hbigdv.png" class="w-9/10 mx-auto lg:h-4/5 lg:w-auto" loading="lazy" decoding="async">
-            </div>
-            <div class="flex flex-col items-center space-y-6 mt-4">
-                <p class="text-customGreen px-4 font-garamond font-semibold text-lg tracking-intro lg:px-0 lg:text-xl">01.12.2024</p>
-                <p class="text-customBlack px-4 font-garamond font-normal text-lg tracking-wider text-center lg:px-0 lg:text-xl">Gedung Lancang Kuning Duri</p>
-                <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291348/line_rxratl.png" loading="lazy" decoding="async">
-            </div>
-            <button id="scroll-btn" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 mt-4 rounded-full font-garamond tracking-wider font-normal lg:hidden">
-                Open Invitation
-            </button>          
+    <div
+      id="intro-section"
+      class="section flex min-h-dvh items-start justify-center overflow-y-auto bg-hero-image bg-cover bg-center bg-no-repeat"
+    >
+      <div class="z-10 my-10 flex min-h-[90vh] w-9/10 flex-col items-center bg-subtract-modified bg-[length:100%_100%] bg-center pb-10 lg:my-auto lg:min-h-[80vh] lg:flex-row lg:justify-center lg:bg-subtract-modified-horizontal lg:p-0">
+        <div class="mt-4 flex flex-col items-center space-y-2">
+          <p class="px-4 py-2 font-garamond text-lg font-normal tracking-wider text-customGray lg:hidden">you are invited to</p>
+          <p class="px-4 font-garamond text-lg font-semibold tracking-intro text-customGreen lg:px-0">THE WEDDING OF</p>
         </div>
+        <div class="mx-auto mt-4 h-2/5 w-full lg:mx-0 lg:my-auto lg:flex lg:h-full lg:w-1/2 lg:items-center">
+          <img
+            src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291347/introimagemobile_hbigdv.png"
+            class="mx-auto w-9/10 lg:h-4/5 lg:w-auto"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="mt-4 flex flex-col items-center space-y-6">
+          <p class="px-4 font-garamond text-lg font-semibold tracking-intro text-customGreen lg:px-0 lg:text-xl">01.12.2024</p>
+          <p class="px-4 text-center font-garamond text-lg font-normal tracking-wider text-customBlack lg:px-0 lg:text-xl">Gedung Lancang Kuning Duri</p>
+          <img
+            src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730291348/line_rxratl.png"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <button
+          id="scroll-btn"
+          class="mt-4 rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-lg font-normal tracking-wider text-white lg:hidden"
+        >
+          Open Invitation
+        </button>
+      </div>
     </div>
-
-    <main id="main-content" class="hidden lg:block">
-        <!-- Section 2: About Pengantin -->
-        <div id="about-pengantin" class="section min-h-screen flex flex-col items-center justify-start bg-subtract bg-cover bg-center">
-            <h2 class="text-xl lg:text-2xl font-garamond text-customGray italic text-center tracking-wider w-4/5 lg:w-1/2 pt-4">Kami sekeluarga mengundang Anda ke pernikahan</h2>
-            <div class="flex flex-row items-center justify-start w-full">
-                <div class="">
-                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364126/dilaintro_owxyjo.png" class="w-[40vw] lg:w-[25vh]">
-                </div>
-                <div class="ml-4 lg:ml-[5vw] w-[45vw] lg:w-[10vw]">
-                    <img src="/assets/dilaaksara.svg" class="lg:w-[4vw] ">
-                    <h2 class="font-fasthand text-2xl lg:text-3xl font-normal text-customIntroGreen">Adila Nurul Ilma</h2>
-                    <h2 class="font-garamond text-black font-normal tracking-wide lg:text-lg lg:tracking-wider lg:w-[14vw] pt-2"> Putri pertama dari Bapak Nursyirwan dan Ibu Karsinah</h2>
-                </div>
-            </div>
-            <img src="/assets/dan.svg" class="w-3/5">
-            <div class="flex flex-row items-center justify-end w-full">
-                <div  class="mr-4 lg:mr-[5vw] w-[45vw] lg:w-[10vw]">
-                    <img src="/assets/rioaksara.svg" class="lg:w-[4vw]">
-                    <h2 class="font-fasthand text-xl lg:text-3xl font-normal text-customIntroGreen">Rio Rifqi Syah Akbar</h2>
-                    <h2 class="font-garamond text-black font-normal tracking-wide lg:text-lg lg:tracking-wider lg:w-[14vw] pt-2">Putra pertama dari Bapak Jenindra Kinta Ismawan dan Ibu Astikasari Mahendrani</h2>
-                </div>
-                <div class="">
-                    <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364128/riointro_hgo8zk.png" class="w-[45vw] lg:w-[30vh]">
-                </div>
-            </div>
+    <main
+      id="main-content"
+      class="hidden lg:block"
+    >
+      <!-- Section 2: About Pengantin -->
+      <div
+        id="about-pengantin"
+        class="section flex min-h-screen flex-col items-center justify-start bg-subtract bg-cover bg-center"
+      >
+        <h2 class="w-4/5 pt-4 text-center font-garamond text-xl italic tracking-wider text-customGray lg:w-1/2 lg:text-2xl">Kami sekeluarga mengundang Anda ke pernikahan</h2>
+        <div class="flex w-full flex-row items-center justify-start">
+          <div class="">
+            <img
+              src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364126/dilaintro_owxyjo.png"
+              class="w-[40vw] lg:w-[25vh]"
+            />
+          </div>
+          <div class="ml-4 w-[45vw] lg:ml-[5vw] lg:w-[10vw]">
+            <img
+              src="/assets/dilaaksara.svg"
+              class="lg:w-[4vw]"
+            />
+            <h2 class="font-fasthand text-2xl font-normal text-customIntroGreen lg:text-3xl">Adila Nurul Ilma</h2>
+            <h2 class="pt-2 font-garamond font-normal tracking-wide text-black lg:w-[14vw] lg:text-lg lg:tracking-wider">Putri pertama dari Bapak Nursyirwan dan Ibu Karsinah</h2>
+          </div>
         </div>
-    
-        <!-- Section 3: Our Memories -->
-        <div class="section min-h-screen flex flex-col items-center justify-center bg-subtract-green bg-cover bg-center">
-            <h2 class="text-3xl text-white font-fasthand mt-10 lg:text-5xl drop-shadow-md">Our Memories</h2>
-            <p class="font-garamond text-white my-6 tracking-widest text-sm text-center font-medium lg:text-lg drop-shadow-md">Kenang-kenangan semasa kecil dari kedua pasangan</p>
-            <!-- First Carousel -->
-            <div class="w-full overflow-hidden relative">
-                <div id="carousel1" class="flex whitespace-nowrap transition-transform duration-300 ease-in-out">
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-cover bg-polaroid bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702944/riobelltower_royv3q.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702937/riobelltower_Cropped_tqtmys.png" alt="Memory 1" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Perth Bell Tower, 2005</p>
-                    </div>
-                    <div class=" flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702939/riochaki-Front_d5nfew.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702941/riochaki-Front_Cropped_wt5i1p.png" alt="Memory 2" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Ulang tahun Rio ke 4, Magelang, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702942/riofirstdayschool_s4bfmr.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702943/riofirstdayschool_Cropped_zlayai.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari pertama sekolah di Australian Islamic College, Perth, 2005</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703007/riolenardstreet-Front_u8fuaj.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702958/riolenardstreet-Front_Cropped_upjctk.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Rumah Lenard Street, Dianella, Perth, 2005</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702956/riopancaarga_jeo1ja.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702955/riopancaarga_Cropped_cj788b.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Komplek Perumahan Akmil Panca Arga, Magelang, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703008/rioperth_fp6hlv.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702984/rioperth_Cropped_dyzm5y.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">South Perth, 2005</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702962/riopondokkelapa-Front_c9ndmh.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702983/riopondokkelapa-Front_Cropped_anbsid.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari pertama sekolah di TK Islam Noor Lela, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703016/rioportrait-Intro_duxnwo.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703009/rioportrait-Intro_Cropped_xlls12.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Magelang, 2003</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703013/riorumahjogja_v82pyu.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703011/riorumahjogja_Cropped_nbil6j.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Yogyakarta, 2001</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703018/riorumahmagelang_v3fsb2.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703014/riorumahmagelang_Cropped_d9hwwo.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Magelang, 2002</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702953/riospiderman_sa5ith.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702952/riospiderman_Cropped_jdeary.png" alt="Memory 3" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Jakarta, 2004</p>
-                    </div>
-                </div>
-            </div>
+        <img
+          src="/assets/dan.svg"
+          class="w-3/5"
+        />
+        <div class="flex w-full flex-row items-center justify-end">
+          <div class="mr-4 w-[45vw] lg:mr-[5vw] lg:w-[10vw]">
+            <img
+              src="/assets/rioaksara.svg"
+              class="lg:w-[4vw]"
+            />
+            <h2 class="font-fasthand text-xl font-normal text-customIntroGreen lg:text-3xl">Rio Rifqi Syah Akbar</h2>
+            <h2 class="pt-2 font-garamond font-normal tracking-wide text-black lg:w-[14vw] lg:text-lg lg:tracking-wider">Putra pertama dari Bapak Jenindra Kinta Ismawan dan Ibu Astikasari Mahendrani</h2>
+          </div>
+          <div class="">
+            <img
+              src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_auto:best,f_auto,w_auto/v1730364128/riointro_hgo8zk.png"
+              class="w-[45vw] lg:w-[30vh]"
+            />
+          </div>
+        </div>
+      </div>
 
-            <div class="w-full overflow-hidden relative my-10">
-                <div id="carousel2" class="flex whitespace-nowrap transition-transform duration-300 ease-in-out">
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702732/IMG_4647_lhcffo.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702724/IMG_4647_Cropped_kym2wn.png" alt="Memory 4" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702835/IMG_4649_vh9ost.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702894/IMG_4649_Cropped_pukpqu.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702727/IMG_4658_jlbr8n.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702737/IMG_4658_Cropped_oowldq.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702825/IMG_4660_z7cme3.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702850/IMG_4660_Cropped_glxpcl.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702841/IMG_4661_wl1g8y.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702856/IMG_4661_Cropped_s3f4dw.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702873/IMG_4662_uni0ji.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702883/IMG_4662_Cropped_etfget.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702843/IMG_4663_o7ldel.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702841/IMG_4663_Cropped_tkon3u.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702724/IMG_4664_twbie1.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702754/IMG_4664_Cropped_kvywix.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702878/IMG_4666_ovjbuj.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702753/IMG_4666_Cropped_xhokyy.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702735/IMG_4667_xxgq5w.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702746/IMG_4667_Cropped_akvd9t.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702759/IMG_4668_jg3f71.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702872/IMG_4668_Cropped_e6qsqp.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702747/IMG_4669_pqxqnl.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702757/IMG_4669_Cropped_fchpiy.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702710/IMG_4670_khxvuc.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702704/IMG_4670_Cropped_anfqlb.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702763/IMG_4671_xekdwp.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702785/IMG_4671_Cropped_sfoqar.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702762/IMG_4672_lfc0s7.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702779/IMG_4672_Cropped_gqsxxx.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702774/IMG_4673_wmnuhh.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702867/IMG_4673_Cropped_ggxvtd.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702770/IMG_4676_ck0whk.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702876/IMG_4676_Cropped_ndubba.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702723/IMG_4677_vhtp9r.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702784/IMG_4677_Cropped_bdyeav.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div> 
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702786/IMG_4678_enbfqu.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702790/IMG_4678_Cropped_bof6kb.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4679_bpthha.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702820/IMG_4679_Cropped_nhwc1r.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702814/IMG_4680_gvvw6q.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702837/IMG_4680_Cropped_pkntzf.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>                   
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702884/IMG_4681_gqa2tx.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702875/IMG_4681_Cropped_bdwqva.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>  
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4682_dvpxpr.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702817/IMG_4682_Cropped_qpdaph.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702790/IMG_4693_q4taqn.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702829/IMG_4693_Cropped_pzesxe.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>
-                    <div class="flex-shrink-0 flex flex-col items-center w-3/5 h-[50vh] m-4 bg-polaroid bg-cover bg-center rounded-lg drop-shadow-md" onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4698_kpd2vq.png')">
-                        <img src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702802/IMG_4698_Cropped_gftaa2.png" alt="Memory 5" class="w-4/5 block mx-auto mt-6 rounded-lg">
-                        <p class="w-4/5 mx-auto whitespace-pre-line h-16 text-center mt-4 font-handsome text-xl lg:text-2xl text-customPolaroidGreen">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
-                    </div>          
-                </div>
+      <!-- Section 3: Our Memories -->
+      <div class="section flex min-h-screen flex-col items-center justify-center bg-subtract-green bg-cover bg-center">
+        <h2 class="mt-10 font-fasthand text-3xl text-white drop-shadow-md lg:text-5xl">Our Memories</h2>
+        <p class="my-6 text-center font-garamond text-sm font-medium tracking-widest text-white drop-shadow-md lg:text-lg">Kenang-kenangan semasa kecil dari kedua pasangan</p>
+        <!-- First Carousel -->
+        <div class="relative w-full overflow-hidden">
+          <div
+            id="carousel1"
+            class="flex whitespace-nowrap transition-transform duration-300 ease-in-out"
+          >
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702944/riobelltower_royv3q.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702937/riobelltower_Cropped_tqtmys.png"
+                alt="Memory 1"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Perth Bell Tower, 2005</p>
             </div>
-            <!-- Modal for displaying the image -->
-            <div id="imageModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 hidden" onclick="closeModal()">
-                <img id="modalImage" class="max-w-full max-h-full" src="" alt="Enlarged view">
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702939/riochaki-Front_d5nfew.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702941/riochaki-Front_Cropped_wt5i1p.png"
+                alt="Memory 2"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Ulang tahun Rio ke 4, Magelang, 2004</p>
             </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702942/riofirstdayschool_s4bfmr.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702943/riofirstdayschool_Cropped_zlayai.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari pertama sekolah di Australian Islamic College, Perth, 2005</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703007/riolenardstreet-Front_u8fuaj.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702958/riolenardstreet-Front_Cropped_upjctk.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Rumah Lenard Street, Dianella, Perth, 2005</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702956/riopancaarga_jeo1ja.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702955/riopancaarga_Cropped_cj788b.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Komplek Perumahan Akmil Panca Arga, Magelang, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703008/rioperth_fp6hlv.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702984/rioperth_Cropped_dyzm5y.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">South Perth, 2005</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702962/riopondokkelapa-Front_c9ndmh.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702983/riopondokkelapa-Front_Cropped_anbsid.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari pertama sekolah di TK Islam Noor Lela, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703016/rioportrait-Intro_duxnwo.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703009/rioportrait-Intro_Cropped_xlls12.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Magelang, 2003</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703013/riorumahjogja_v82pyu.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703011/riorumahjogja_Cropped_nbil6j.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Yogyakarta, 2001</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703018/riorumahmagelang_v3fsb2.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730703014/riorumahmagelang_Cropped_d9hwwo.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Magelang, 2002</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702953/riospiderman_sa5ith.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702952/riospiderman_Cropped_jdeary.png"
+                alt="Memory 3"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Jakarta, 2004</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Section 4: Duri Info -->
-        <div class="section min-h-screen flex flex-col items-center justify-center bg-hero-gradient-overlay bg-cover bg-center">
-            <div class="z-10 flex flex-col items-center justify-center bg-durioval bg-no-repeat bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:w-7/10 space-y-6 lg:space-y-10">
-                <img src="/assets/goldmegamendung.svg">
-                <h1 class="font-fasthand text-2xl lg:text-4xl text-customIntroGreen">Minggu, 1 Desember 2024</h1>
-                <div>
-                    <h1 class="font-garamond font-bold tracking-widest text-xl lg:text-2xl text-customDarkGreen text-center">Akad Nikah</h1>
-                    <h1 class="font-garamond tracking-widest text-lg lg:text-2xl text-customGray">08:00 - 10:00 WIB</h1>
-                </div>    
-                <div>
-                    <h1 class="font-garamond font-bold tracking-widest text-xl lg:text-2xl text-customDarkGreen text-center">Resepsi</h1>
-                    <h1 class="font-garamond tracking-widest text-lg lg:text-2xl text-customGray">13:00 - 16:00 WIB</h1>
-                </div>
-                <img src="/assets/linebreak.svg" class="w-4/5">
-                <div>
-                    <h1 class="font-garamond font-bold tracking-widest text-lg lg:text-2xl text-center text-customDarkGreen">Gedung Lancang Kuning</h1>
-                    <h1 class="font-garamond tracking-widest w-7/10 text-lg lg:text-2xl mx-auto text-center text-customGray">Komplek Pertamina Hulu Rokan Duri, Riau</h1>
-                </div> 
-                <!-- Button -->
-                <button class="text-xl lg:text-2xl text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="openGoogleMapsDuri()">
-                    Lihat Peta
-                </button>
+        <div class="relative my-10 w-full overflow-hidden">
+          <div
+            id="carousel2"
+            class="flex whitespace-nowrap transition-transform duration-300 ease-in-out"
+          >
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702732/IMG_4647_lhcffo.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702724/IMG_4647_Cropped_kym2wn.png"
+                alt="Memory 4"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
             </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702835/IMG_4649_vh9ost.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702894/IMG_4649_Cropped_pukpqu.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702727/IMG_4658_jlbr8n.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702737/IMG_4658_Cropped_oowldq.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702825/IMG_4660_z7cme3.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702850/IMG_4660_Cropped_glxpcl.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702841/IMG_4661_wl1g8y.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702856/IMG_4661_Cropped_s3f4dw.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702873/IMG_4662_uni0ji.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702883/IMG_4662_Cropped_etfget.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702843/IMG_4663_o7ldel.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702841/IMG_4663_Cropped_tkon3u.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702724/IMG_4664_twbie1.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702754/IMG_4664_Cropped_kvywix.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702878/IMG_4666_ovjbuj.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702753/IMG_4666_Cropped_xhokyy.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702735/IMG_4667_xxgq5w.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702746/IMG_4667_Cropped_akvd9t.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702759/IMG_4668_jg3f71.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702872/IMG_4668_Cropped_e6qsqp.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702747/IMG_4669_pqxqnl.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702757/IMG_4669_Cropped_fchpiy.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702710/IMG_4670_khxvuc.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702704/IMG_4670_Cropped_anfqlb.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702763/IMG_4671_xekdwp.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702785/IMG_4671_Cropped_sfoqar.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702762/IMG_4672_lfc0s7.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702779/IMG_4672_Cropped_gqsxxx.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702774/IMG_4673_wmnuhh.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702867/IMG_4673_Cropped_ggxvtd.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702770/IMG_4676_ck0whk.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702876/IMG_4676_Cropped_ndubba.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702723/IMG_4677_vhtp9r.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702784/IMG_4677_Cropped_bdyeav.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702786/IMG_4678_enbfqu.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702790/IMG_4678_Cropped_bof6kb.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4679_bpthha.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702820/IMG_4679_Cropped_nhwc1r.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702814/IMG_4680_gvvw6q.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702837/IMG_4680_Cropped_pkntzf.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702884/IMG_4681_gqa2tx.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702875/IMG_4681_Cropped_bdwqva.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4682_dvpxpr.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702817/IMG_4682_Cropped_qpdaph.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702790/IMG_4693_q4taqn.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702829/IMG_4693_Cropped_pzesxe.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+            <div
+              class="m-4 flex h-[50vh] w-3/5 flex-shrink-0 flex-col items-center rounded-lg bg-polaroid bg-cover bg-center drop-shadow-md"
+              onclick="openModal('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702805/IMG_4698_kpd2vq.png')"
+            >
+              <img
+                src="https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730702802/IMG_4698_Cropped_gftaa2.png"
+                alt="Memory 5"
+                class="mx-auto mt-6 block w-4/5 rounded-lg"
+              />
+              <p class="mx-auto mt-4 h-16 w-4/5 whitespace-pre-line text-center font-handsome text-xl text-customPolaroidGreen lg:text-2xl">Hari Pertama Sekolah, Jakarta Timur, 2004</p>
+            </div>
+          </div>
         </div>
+        <!-- Modal for displaying the image -->
+        <div
+          id="imageModal"
+          class="fixed inset-0 flex hidden items-center justify-center bg-black bg-opacity-75"
+          onclick="closeModal()"
+        >
+          <img
+            id="modalImage"
+            class="max-h-full max-w-full"
+            src=""
+            alt="Enlarged view"
+          />
+        </div>
+      </div>
 
-        <div class="flex flex-col items-center justify-center bg-customDarkGreen">
-            <div>
-                <h1 class="font-garamond bg-linearfontgold bg-clip-text text-transparent text-3xl tracking-widest mt-16">AKAD & RESEPSI</h1>
-                <h1 class="font-garamond text-white text-xl tracking-widest text-center">Minggu, 1 Desember 2024</h1>
-            </div>
-            <h1 class="font-fasthand text-white text-3xl tracking-widest my-10">Save the date</h1>
-            <div class="duri-countdown-grid flex flex-row justify-evenly w-full lg:w-7/10">
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="duriDays" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Days</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="duriHours" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Hours</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="duriMinutes" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Mins</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="duriSeconds" class="font-fasthand text-center ">00</p>
-                    <p class="font-garamond text-center">Secs</p>
-                </div>
-            </div>
-            <button class="text-lg text-white bg-customLightGreen my-10 px-8 py-4 rounded-full font-garamond tracking-widest" onclick="addToCalendarDuri()">
-                Tambah Ke Kalender
-            </button>
+      <!-- Section 4: Duri Info -->
+      <div class="section flex min-h-screen flex-col items-center justify-center bg-hero-gradient-overlay bg-cover bg-center">
+        <div class="z-10 flex min-h-[90vh] w-9/10 flex-col items-center justify-center space-y-6 bg-durioval bg-[length:100%_100%] bg-center bg-no-repeat lg:w-7/10 lg:space-y-10">
+          <img src="/assets/goldmegamendung.svg" />
+          <h1 class="font-fasthand text-2xl text-customIntroGreen lg:text-4xl">Minggu, 1 Desember 2024</h1>
+          <div>
+            <h1 class="text-center font-garamond text-xl font-bold tracking-widest text-customDarkGreen lg:text-2xl">Akad Nikah</h1>
+            <h1 class="font-garamond text-lg tracking-widest text-customGray lg:text-2xl">08:00 - 10:00 WIB</h1>
+          </div>
+          <div>
+            <h1 class="text-center font-garamond text-xl font-bold tracking-widest text-customDarkGreen lg:text-2xl">Resepsi</h1>
+            <h1 class="font-garamond text-lg tracking-widest text-customGray lg:text-2xl">13:00 - 16:00 WIB</h1>
+          </div>
+          <img
+            src="/assets/linebreak.svg"
+            class="w-4/5"
+          />
+          <div>
+            <h1 class="text-center font-garamond text-lg font-bold tracking-widest text-customDarkGreen lg:text-2xl">Gedung Lancang Kuning</h1>
+            <h1 class="mx-auto w-7/10 text-center font-garamond text-lg tracking-widest text-customGray lg:text-2xl">Komplek Pertamina Hulu Rokan Duri, Riau</h1>
+          </div>
+          <!-- Button -->
+          <button
+            class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl text-white lg:text-2xl"
+            onclick="openGoogleMapsDuri()"
+          >
+            Lihat Peta
+          </button>
         </div>
-        <!-- Section 5: Jogja Info -->
-        <div class="section min-h-screen flex flex-col items-center justify-center bg-jogja-gradient-overlay bg-cover bg-center">
-            <div class="z-10 flex flex-col items-center justify-center bg-jogjaoval bg-no-repeat bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:w-7/10 space-y-4 lg:space-y-10">
-                <img src="/assets/gunungan.png">
-                <h1 class="font-fasthand text-2xl lg:text-4xl text-customIntroGreen">Minggu Wage, 8 Desember 2024</h1>
-                <div>
-                    <h1 class="font-garamond font-bold tracking-widest text-xl lg:text-2xl text-customDarkGreen text-center">Ngunduh Mantu</h1>
-                    <h1 class="font-garamond tracking-widest text-lg lg:text-2xl text-customGray">09:00 - 11:00 WIB</h1>
-                </div>
-                <img src="/assets/linebreak.svg" class="w-4/5">
-                <div>
-                    <h1 class="font-garamond font-bold tracking-widest text-lg lg:text-2xl text-center text-customDarkGreen">Pendopo Tulungo</h1>
-                    <h1 class="font-garamond tracking-widest w-7/10 text-lg lg:text-2xl mx-auto text-center text-customGray">Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
-                </div>
-                <button class="text-xl lg:text-2xl text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="openGoogleMapsJogja()">
-                    Lihat Peta
-                </button>
-            </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-customDarkGreen">
+        <div>
+          <h1 class="mt-16 bg-linearfontgold bg-clip-text font-garamond text-3xl tracking-widest text-transparent">AKAD & RESEPSI</h1>
+          <h1 class="text-center font-garamond text-xl tracking-widest text-white">Minggu, 1 Desember 2024</h1>
+        </div>
+        <h1 class="my-10 font-fasthand text-3xl tracking-widest text-white">Save the date</h1>
+        <div class="duri-countdown-grid flex w-full flex-row justify-evenly lg:w-7/10">
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="duriDays"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Days</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="duriHours"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Hours</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="duriMinutes"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Mins</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="duriSeconds"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Secs</p>
+          </div>
+        </div>
+        <button
+          class="my-10 rounded-full bg-customLightGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
+          onclick="addToCalendarDuri()"
+        >
+          Tambah Ke Kalender
+        </button>
+      </div>
+      <!-- Section 5: Jogja Info -->
+      <div class="section flex min-h-screen flex-col items-center justify-center bg-jogja-gradient-overlay bg-cover bg-center">
+        <div class="z-10 flex min-h-[90vh] w-9/10 flex-col items-center justify-center space-y-4 bg-jogjaoval bg-[length:100%_100%] bg-center bg-no-repeat lg:w-7/10 lg:space-y-10">
+          <img src="/assets/gunungan.png" />
+          <h1 class="font-fasthand text-2xl text-customIntroGreen lg:text-4xl">Minggu Wage, 8 Desember 2024</h1>
+          <div>
+            <h1 class="text-center font-garamond text-xl font-bold tracking-widest text-customDarkGreen lg:text-2xl">Ngunduh Mantu</h1>
+            <h1 class="font-garamond text-lg tracking-widest text-customGray lg:text-2xl">09:00 - 11:00 WIB</h1>
+          </div>
+          <img
+            src="/assets/linebreak.svg"
+            class="w-4/5"
+          />
+          <div>
+            <h1 class="text-center font-garamond text-lg font-bold tracking-widest text-customDarkGreen lg:text-2xl">Pendopo Tulungo</h1>
+            <h1 class="mx-auto w-7/10 text-center font-garamond text-lg tracking-widest text-customGray lg:text-2xl">Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
+          </div>
+          <button
+            class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl text-white lg:text-2xl"
+            onclick="openGoogleMapsJogja()"
+          >
+            Lihat Peta
+          </button>
+        </div>
         <!-- <img src="/assets/jogjaoval.png" class="absolute w-9/10 h-9/10 mt-4 z-0"> -->
+      </div>
+
+      <div class="flex flex-col items-center justify-center bg-customDarkGreen">
+        <div>
+          <h1 class="mt-16 bg-linearfontgold bg-clip-text font-garamond text-3xl tracking-widest text-transparent">NGUNDUH MANTU</h1>
+          <h1 class="text-center font-garamond text-xl tracking-widest text-white">Minggu Wage, 8 Desember 2024</h1>
+        </div>
+        <h1 class="my-10 font-fasthand text-3xl tracking-widest text-white">Save the date</h1>
+        <div class="jogja-countdown-grid flex w-full flex-row justify-evenly lg:w-7/10">
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="jogjaDays"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Days</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="jogjaHours"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Hours</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="jogjaMinutes"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Mins</p>
+          </div>
+          <div class="w-1/5 rounded-lg bg-polaroid bg-cover bg-center px-2 py-4 text-lg tracking-widest text-customDarkGreen lg:w-1/5 lg:text-2xl">
+            <p
+              id="jogjaSeconds"
+              class="text-center font-fasthand"
+            >
+              00
+            </p>
+            <p class="text-center font-garamond">Secs</p>
+          </div>
+        </div>
+        <button
+          class="my-10 rounded-full bg-customLightGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
+          onclick="addToCalendarJogja()"
+        >
+          Tambah Ke Kalender
+        </button>
+      </div>
+      <!-- Section 6: Videos -->
+      <div class="section flex flex-col items-center justify-start">
+        <div class="flex w-full flex-col items-center justify-center bg-subtract bg-cover bg-center">
+          <img
+            src="/assets/ring.png"
+            class="my-6 w-1/10"
+          />
+          <h1 class="font-fasthand text-3xl tracking-widest text-customIntroGreen lg:text-5xl">Our Engagement</h1>
+          <h1 class="my-6 font-garamond text-2xl tracking-widest text-customDarkGreen lg:text-3xl">Sabtu, 6 Juli 2024</h1>
+          <div class="mb-10 flex h-[40vh] w-9/10 items-center justify-center">
+            <iframe
+              class="h-full w-full rounded-lg"
+              src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
+              title="Our Engagement Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center bg-customDarkGreen">
-            <div>
-                <h1 class="font-garamond bg-linearfontgold bg-clip-text text-transparent text-3xl tracking-widest mt-16">NGUNDUH MANTU</h1>
-                <h1 class="font-garamond text-white text-xl tracking-widest text-center">Minggu Wage, 8 Desember 2024</h1>
-            </div>
-            <h1 class="font-fasthand text-white text-3xl tracking-widest my-10">Save the date</h1>
-            <div class="jogja-countdown-grid flex flex-row justify-evenly w-full lg:w-7/10">
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="jogjaDays" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Days</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="jogjaHours" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Hours</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="jogjaMinutes" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Mins</p>
-                </div>
-                <div class="bg-polaroid bg-cover bg-center rounded-lg w-1/5 lg:w-1/5 text-lg lg:text-2xl px-2 py-4 text-customDarkGreen tracking-widest">
-                    <p id="jogjaSeconds" class="font-fasthand text-center">00</p>
-                    <p class="font-garamond text-center">Secs</p>
-                </div>
-            </div>
-            <button class="text-lg text-white bg-customLightGreen my-10 px-8 py-4 rounded-full font-garamond tracking-widest" onclick="addToCalendarJogja()">
-                Tambah Ke Kalender
-            </button>
+        <div class="flex w-full flex-col items-center justify-center bg-subtract-green bg-cover bg-center">
+          <h1 class="my-10 font-fasthand text-3xl tracking-widest text-white lg:text-5xl">Livestream Akad Nikah</h1>
+          <div class="mb-10 flex h-[40vh] w-9/10 items-center justify-center">
+            <iframe
+              class="h-full w-full rounded-lg"
+              src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
+              title="Livestream Akad Nikah"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <button
+            class="mb-10 w-3/5 rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl tracking-widest text-white"
+            onclick=""
+          >
+            Salin Link
+          </button>
         </div>
-        <!-- Section 6: Videos -->
-        <div class="section flex flex-col items-center justify-start">
-            <div class=" w-full bg-subtract bg-cover bg-center flex flex-col items-center justify-center">
-                <img src="/assets/ring.png" class="w-1/10 my-6">
-                <h1 class="font-fasthand text-3xl lg:text-5xl text-customIntroGreen tracking-widest">Our Engagement</h1>
-                <h1 class="font-garamond text-2xl lg:text-3xl my-6 text-customDarkGreen tracking-widest">Sabtu, 6 Juli 2024</h1>
-                <div class="flex items-center justify-center w-9/10 mb-10 h-[40vh]">
-                    <iframe class="w-full rounded-lg h-full"
-                            src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
-                            title="Our Engagement Video"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>              
-                </div>
+      </div>
+
+      <!-- Section 7: Konfirmasi Kehadiran -->
+      <div class="section flex min-h-screen flex-col items-center justify-center bg-hero-image bg-cover bg-center">
+        <div class="z-10 mt-6 flex min-h-[90vh] w-9/10 flex-col items-center justify-center space-y-2 bg-konfirmasioval bg-[length:100%_100%] bg-center bg-no-repeat lg:mt-2 lg:w-7/10 lg:space-y-6">
+          <h1 class="mt-10 font-fasthand text-2xl text-customIntroGreen lg:text-4xl">Konfirmasi Kehadiran</h1>
+          <h1 class="text-md w-4/5 text-center font-garamond tracking-widest text-customGray lg:text-lg">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
+          <img
+            src="/assets/linebreak.svg"
+            class="w-4/5"
+          />
+          <form
+            method="POST"
+            action=""
+            name="rsvp-form"
+            class="w-9/10"
+          >
+            <!-- Name Field -->
+            <div class="mb-4 w-full">
+              <label
+                for="name"
+                class="text-md block font-garamond font-semibold tracking-widest text-customBlackKonfirmasi lg:text-lg"
+              >
+                Nama
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full rounded border border-gray-300 p-2 font-garamond tracking-widest"
+                placeholder="Tulis nama anda/nama keluarga/perwakilan"
+                required
+              />
             </div>
-            
-            <div class=" w-full bg-subtract-green bg-cover bg-center flex flex-col items-center justify-center">
-                <h1 class="font-fasthand text-white text-3xl lg:text-5xl tracking-widest my-10">Livestream Akad Nikah</h1>
-                <div class="flex items-center justify-center w-9/10 mb-10 h-[40vh]">
-                    <iframe class="w-full rounded-lg h-full"
-                            src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
-                            title="Livestream Akad Nikah"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                    </iframe>              
-                </div>
-                <button class="w-3/5 text-xl tracking-widest text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond mb-10" onclick="">
-                    Salin Link
+            <!-- Event Checkboxes -->
+            <div class="mb-4 w-full">
+              <label class="text-md block font-garamond font-semibold tracking-widest text-customBlackKonfirmasi lg:text-lg">Prosesi yang akan dihadiri</label>
+              <div class="mt-2 flex flex-col space-y-6">
+                <label class="text-md flex items-start font-garamond tracking-widest text-customBlackKonfirmasi lg:text-lg">
+                  <input
+                    type="checkbox"
+                    name="akad"
+                    value="attending"
+                    class="relative mr-4 h-6 w-6 appearance-none rounded-md border border-customDarkGreen bg-white checked:bg-customDarkGreen checked:after:absolute checked:after:inset-0 checked:after:border-2 checked:after:border-customDarkGreen checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-contain checked:after:bg-center checked:after:bg-no-repeat checked:after:content-[''] lg:h-8 lg:w-8"
+                  />
+                  <span class="flex flex-col">
+                    <span class="font-semibold">Akad Nikah</span>
+                    <span class="lg:text-md text-sm text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
+                  </span>
+                </label>
+                <label class="text-md flex items-start font-garamond tracking-widest text-customBlackKonfirmasi lg:text-lg">
+                  <input
+                    type="checkbox"
+                    name="resepsi"
+                    value="attending"
+                    class="relative mr-4 h-6 w-6 appearance-none rounded-md border border-customDarkGreen bg-white checked:bg-customDarkGreen checked:after:absolute checked:after:inset-0 checked:after:border-2 checked:after:border-customDarkGreen checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-contain checked:after:bg-center checked:after:bg-no-repeat checked:after:content-[''] lg:h-8 lg:w-8"
+                  />
+                  <span class="flex flex-col">
+                    <span class="font-semibold">Resepsi</span>
+                    <span class="lg:text-md text-sm text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
+                  </span>
+                </label>
+                <label class="text-md flex items-start font-garamond tracking-widest text-customBlackKonfirmasi lg:text-lg">
+                  <input
+                    type="checkbox"
+                    name="ngunduhmantu"
+                    value="attending"
+                    class="relative mr-4 h-6 w-6 appearance-none rounded-md border border-customDarkGreen bg-white checked:bg-customDarkGreen checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-contain checked:after:bg-center checked:after:bg-no-repeat checked:after:content-[''] lg:h-8 lg:w-8"
+                  />
+                  <span class="flex flex-col">
+                    <span class="font-semibold">Ngunduh Mantu</span>
+                    <span class="lg:text-md text-sm text-customGray">Pendopo Tulungo Yogyakarta</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label
+                for="pax"
+                class="block font-garamond text-lg font-semibold tracking-widest text-customBlackKonfirmasi"
+              >
+                Jumlah Pax.
+              </label>
+              <div class="mt-2 flex items-center space-x-2">
+                <button
+                  type="button"
+                  class="rounded-full bg-white px-3 py-1 font-bold"
+                  onclick="decreasePax()"
+                >
+                  -
                 </button>
+                <input
+                  type="text"
+                  id="pax"
+                  name="pax"
+                  value="1"
+                  class="w-12 rounded bg-transparent text-center font-garamond text-2xl font-bold"
+                  readonly
+                />
+                <button
+                  type="button"
+                  class="rounded-full bg-white px-3 py-1 font-bold"
+                  onclick="increasePax()"
+                >
+                  +
+                </button>
+              </div>
             </div>
-        </div>
-
-        <!-- Section 7: Konfirmasi Kehadiran -->
-        <div class="section min-h-screen flex flex-col items-center justify-center bg-hero-image bg-cover bg-center">
-            <div class="z-10 flex flex-col items-center justify-center bg-konfirmasioval bg-no-repeat bg-center bg-[length:100%_100%] min-h-[90vh] w-9/10 lg:w-7/10 space-y-2 lg:space-y-6 mt-6 lg:mt-2 ">
-                <h1 class="font-fasthand text-2xl lg:text-4xl text-customIntroGreen mt-10">Konfirmasi Kehadiran</h1>
-                <h1 class="font-garamond tracking-widest text-md lg:text-lg text-customGray text-center w-4/5">Harap mengonfirmasi kehadiran Anda sebelum tanggal 30 November 2024</h1>
-                <img src="/assets/linebreak.svg" class="w-4/5">
-                <form method="POST" action="" name="rsvp-form" class="w-9/10">
-                    <!-- Name Field -->
-                    <div class="mb-4 w-full">
-                        <label for="name" class="block text-md lg:text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded font-garamond tracking-widest" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
-                    </div>
-                    <!-- Event Checkboxes -->
-                    <div class="mb-4 w-full">
-                        <label class="block text-md lg:text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Prosesi yang akan dihadiri</label>
-                        <div class="flex flex-col mt-2 space-y-6">
-                            <label class="flex items-start text-md lg:text-lg font-garamond text-customBlackKonfirmasi tracking-widest">
-                                <input type="checkbox" name="akad" value="attending" class="mr-4 bg-white h-6 w-6 lg:h-8 lg:w-8 appearance-none rounded-md border border-customDarkGreen checked:after:border-2 checked:after:border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
-                                <span class="flex flex-col">
-                                    <span class="font-semibold">Akad Nikah</span>
-                                    <span class="text-sm lg:text-md text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
-                                </span>
-                            </label>
-                            <label class="flex items-start text-md lg:text-lg font-garamond text-customBlackKonfirmasi  tracking-widest">
-                                <input type="checkbox" name="resepsi" value="attending" class="mr-4 bg-white h-6 w-6 lg:h-8 lg:w-8 appearance-none rounded-md border border-customDarkGreen checked:after:border-2 checked:after:border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
-                                <span class="flex flex-col">
-                                    <span class="font-semibold">Resepsi</span>
-                                    <span class="text-sm lg:text-md text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
-                                </span>
-                            </label>
-                            <label class="flex items-start text-md lg:text-lg font-garamond text-customBlackKonfirmasi  tracking-widest">
-                                <input type="checkbox" name="ngunduhmantu" value="attending" class="mr-4 bg-white h-6 w-6 lg:h-8 lg:w-8 appearance-none rounded-md border border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
-                                <span class="flex flex-col">
-                                    <span class="font-semibold">Ngunduh Mantu</span>
-                                    <span class="text-sm lg:text-md text-customGray">Pendopo Tulungo Yogyakarta</span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="pax" class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Jumlah Pax.</label>
-                        <div class="flex items-center space-x-2 mt-2">
-                            <button type="button" class="px-3 py-1 bg-white rounded-full font-bold" onclick="decreasePax()">-</button>
-                            <input type="text" id="pax" name="pax" value="1" class="w-12 text-center bg-transparent rounded font-garamond text-2xl font-bold" readonly>
-                            <button type="button" class="px-3 py-1 bg-white rounded-full font-bold" onclick="increasePax()">+</button>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="mb-6 lg:mb-2 text-lg text-white bg-customPrimaryGreen px-6 py-2 lg:px-8 lg:py-4 rounded-full font-garamond mx-auto w-3/5 tracking-widest" onclick="">Konfirmasi</button>
-                    </div>
-                </form>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="mx-auto mb-6 w-3/5 rounded-full bg-customPrimaryGreen px-6 py-2 font-garamond text-lg tracking-widest text-white lg:mb-2 lg:px-8 lg:py-4"
+                onclick=""
+              >
+                Konfirmasi
+              </button>
             </div>
+          </form>
         </div>
+      </div>
 
-        <!-- Section 8: Amplop Digital -->
-        <div class="section min-h-screen flex flex-col items-center justify-start bg-customDarkGreen">
-            <div class="w-9/10 lg:w-7/10 space-y-4 lg:space-y-10 mt-10 mb-6">
-                <h1 class="font-fasthand text-white text-3xl lg:text-5xl tracking-widest text-center">Amplop Digital</h1>
-                <h1 class="text-center text-md lg:text-xl text-white font-garamond tracking-widest">Kehadiran Anda sudah sangat berarti dan cukup membuat kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda:</h1>
-                <img src="/assets/linebreakwhite.svg" class="w-full">
-                <div class=" bg-amplopdigital bg-center bg-no-repeat bg-[length:100%_100%] py-4 lg:py-10">
-                    <div class="flex flex-col justify-start w-4/5 mx-auto ">
-                        <label for="bankSelect" class="font-semibold text-lg font-garamond tracking-widest text-customDarkGreen">Bank Tujuan</label>
-                        <select id="bankSelect" class="mt-2 p-2 border border-gray-300 rounded-md w-full text-customDarkGreen font-garamond tracking-widest" onchange="showBankDetails()">
-                            <option>Pilih Bank</option>
-                            <option value="anz">ANZ (AUS)</option>
-                            <option value="mandiri">Mandiri (IDN)</option>
-                        </select>
+      <!-- Section 8: Amplop Digital -->
+      <div class="section flex min-h-screen flex-col items-center justify-start bg-customDarkGreen">
+        <div class="mb-6 mt-10 w-9/10 space-y-4 lg:w-7/10 lg:space-y-10">
+          <h1 class="text-center font-fasthand text-3xl tracking-widest text-white lg:text-5xl">Amplop Digital</h1>
+          <h1 class="text-md text-center font-garamond tracking-widest text-white lg:text-xl">Kehadiran Anda sudah sangat berarti dan cukup membuat kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda:</h1>
+          <img
+            src="/assets/linebreakwhite.svg"
+            class="w-full"
+          />
+          <div class="bg-amplopdigital bg-[length:100%_100%] bg-center bg-no-repeat py-4 lg:py-10">
+            <div class="mx-auto flex w-4/5 flex-col justify-start">
+              <label
+                for="bankSelect"
+                class="font-garamond text-lg font-semibold tracking-widest text-customDarkGreen"
+              >
+                Bank Tujuan
+              </label>
+              <select
+                id="bankSelect"
+                class="mt-2 w-full rounded-md border border-gray-300 p-2 font-garamond tracking-widest text-customDarkGreen"
+                onchange="showBankDetails()"
+              >
+                <option>Pilih Bank</option>
+                <option value="anz">ANZ (AUS)</option>
+                <option value="mandiri">Mandiri (IDN)</option>
+              </select>
 
-                        <div id="bankDetails" class="mt-4 hidden p-3 text-lg lg:text-2xl font-garamond tracking-widest text-customDarkGreen">
-                            <p class="flex flex-col mb-6">
-                                <strong>Bank</strong> 
-                                <span id="bankName"></span>
-                            </p>
-                            <p class="flex flex-col mb-6">
-                                <strong>No. Rekening</strong> 
-                                <span id="accountNumber"></span>
-                            </p>
-                            <p class="flex flex-col mb-6">
-                                <strong>Pemilik Rekening</strong> 
-                                <span id="accountHolder"></span>
-                            </p>
-                            <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="copyBankDetails()">Salin Informasi</button>
-                        </div>
-                    </div>
-                    
-
-                    
-                </div>
+              <div
+                id="bankDetails"
+                class="mt-4 hidden p-3 font-garamond text-lg tracking-widest text-customDarkGreen lg:text-2xl"
+              >
+                <p class="mb-6 flex flex-col">
+                  <strong>Bank</strong>
+                  <span id="bankName"></span>
+                </p>
+                <p class="mb-6 flex flex-col">
+                  <strong>No. Rekening</strong>
+                  <span id="accountNumber"></span>
+                </p>
+                <p class="mb-6 flex flex-col">
+                  <strong>Pemilik Rekening</strong>
+                  <span id="accountHolder"></span>
+                </p>
+                <button
+                  class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-lg text-white"
+                  onclick="copyBankDetails()"
+                >
+                  Salin Informasi
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
-    
 
-<script src="/js/main.js" defer></script>
-</body>
+    <script
+      src="/js/main.js"
+      defer
+    ></script>
+  </body>
 </html>

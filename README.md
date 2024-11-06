@@ -23,3 +23,6 @@ my-project/
 
 ## Run tailwind build
 npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch
+
+## To Use Prettier
+npx prettier --write public/index.html

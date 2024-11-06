@@ -1,13 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const root = document.documentElement;
-//     const baselineFontSize = 16; // Your target base size in px
 
-//     const currentFontSize = parseFloat(window.getComputedStyle(root).fontSize);
-    
-//     if (currentFontSize !== baselineFontSize) {
-//         root.style.fontSize = `${baselineFontSize}px`;
-//     }
-// });
 
 
 
