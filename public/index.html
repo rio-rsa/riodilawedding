@@ -373,32 +373,43 @@
                         <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded font-garamond tracking-widest" placeholder="Tulis nama anda/nama keluarga/perwakilan" required>
                     </div>
                     <!-- Event Checkboxes -->
-                    <div class="mb-4 w-4/5">
+                    <div class="mb-4 w-full">
                         <label class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Prosesi yang akan dihadiri</label>
-                        <div class="flex flex-col mt-2">
-                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
-                                <input type="checkbox" name="akad" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-checkbox checked:after:bg-no-repeat checked:after:bg-center checked:after:bg-contain">
-                                Akad Nikah
+                        <div class="flex flex-col mt-2 space-y-6">
+                            <label class="flex items-start text-lg font-garamond text-customBlackKonfirmasi tracking-widest">
+                                <input type="checkbox" name="akad" value="attending" class="mr-4 bg-white h-8 w-8 appearance-none rounded-md border border-customDarkGreen checked:after:border-2 checked:after:border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
+                                <span class="flex flex-col">
+                                    <span class="font-semibold">Akad Nikah</span>
+                                    <span class="text-md text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
+                                </span>
                             </label>
-                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
-                                <input type="checkbox" name="resepsi" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-checkbox">
-                                Resepsi
+                            <label class="flex items-start text-lg font-garamond text-customBlackKonfirmasi  tracking-widest">
+                                <input type="checkbox" name="resepsi" value="attending" class="mr-4 bg-white h-8 w-8 appearance-none rounded-md border border-customDarkGreen checked:after:border-2 checked:after:border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
+                                <span class="flex flex-col">
+                                    <span class="font-semibold">Resepsi</span>
+                                    <span class="text-md text-customGray">Gedung Lancang Kuning, Duri, Riau</span>
+                                </span>
                             </label>
-                            <label class="text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">
-                                <input type="checkbox" name="ngunduhmantu" value="attending" class="bg-white h-6 w-6 appearance-none rounded-md border border-customDarkGreen checked:bg-checkbox">
-                                Ngunduh Mantu
+                            <label class="flex items-start text-lg font-garamond text-customBlackKonfirmasi  tracking-widest">
+                                <input type="checkbox" name="ngunduhmantu" value="attending" class="mr-4 bg-white h-8 w-8 appearance-none rounded-md border border-customDarkGreen checked:bg-customDarkGreen relative checked:after:content-[''] checked:after:absolute checked:after:inset-0 checked:after:bg-[url('/assets/tick.svg')] checked:after:bg-center checked:after:bg-no-repeat checked:after:bg-contain">
+                                <span class="flex flex-col">
+                                    <span class="font-semibold">Ngunduh Mantu</span>
+                                    <span class="text-md text-customGray">Pendopo Tulungo Yogyakarta</span>
+                                </span>
                             </label>
                         </div>
                     </div>
                     <div class="mb-4">
                         <label for="pax" class="block text-lg font-garamond text-customBlackKonfirmasi font-semibold tracking-widest">Jumlah Pax.</label>
                         <div class="flex items-center space-x-2 mt-2">
-                            <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="decreasePax()">-</button>
-                            <input type="text" id="pax" name="pax" value="1" class="w-12 text-center border border-gray-300 rounded" readonly>
-                            <button type="button" class="px-3 py-1 bg-gray-300 rounded" onclick="increasePax()">+</button>
+                            <button type="button" class="px-3 py-1 bg-white rounded-full font-bold" onclick="decreasePax()">-</button>
+                            <input type="text" id="pax" name="pax" value="1" class="w-12 text-center bg-transparent rounded font-garamond text-2xl font-bold" readonly>
+                            <button type="button" class="px-3 py-1 bg-white rounded-full font-bold" onclick="increasePax()">+</button>
                         </div>
                     </div>
-                    <button type="submit" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="">Konfirmasi</button>
+                    <div class="text-center">
+                        <button type="submit" class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond mx-auto w-3/5 tracking-widest" onclick="">Konfirmasi</button>
+                    </div>
                 </form>
             </div>
         </div>
