@@ -415,23 +415,39 @@
         </div>
 
         <!-- Section 8: Amplop Digital -->
-        <div class="section min-h-screen flex flex-col items-center justify-center bg-customDarkGreen">
-            <h1 class="text-2xl text-white font-fasthand">Amplop Digital</h1>
-            <h1 class="text-center text-xl text-white font-garamond">Kehadiran Anda sudah sangat berarti dan cukup membuat kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda:</h1>
-            <img src="/assets/linebreakwhite.svg">
-            <div class="bg-amplopdigital bg-cover">
-                <label for="bankSelect" class="font-semibold text-lg">Bank Tujuan</label>
-                <select id="bankSelect" class="mt-2 p-2 border border-gray-300 rounded-md" onchange="showBankDetails()">
-                    <option value="">Pilih Bank</option>
-                    <option value="anz">ANZ</option>
-                    <option value="mandiri">Mandiri</option>
-                </select>
+        <div class="section min-h-screen flex flex-col items-center justify-start bg-customDarkGreen">
+            <div class="w-7/10 space-y-10 mt-10">
+                <h1 class="font-fasthand text-white text-5xl tracking-widest text-center">Amplop Digital</h1>
+                <h1 class="text-center text-xl text-white font-garamond tracking-widest">Kehadiran Anda sudah sangat berarti dan cukup membuat kami bahagia, namun jika ingin mengirimkan hadiah, kami menyediakan amplop digital untuk mempermudah Anda:</h1>
+                <img src="/assets/linebreakwhite.svg" class="w-full">
+                <div class=" bg-amplopdigital bg-center bg-no-repeat bg-[length:100%_100%] py-10">
+                    <div class="flex flex-col justify-start w-4/5 mx-auto ">
+                        <label for="bankSelect" class="font-semibold text-lg font-garamond tracking-widest text-customDarkGreen">Bank Tujuan</label>
+                        <select id="bankSelect" class="mt-2 p-2 border border-gray-300 rounded-md w-full text-customDarkGreen font-garamond tracking-widest" onchange="showBankDetails()">
+                            <option>Pilih Bank</option>
+                            <option value="anz">ANZ (AUS)</option>
+                            <option value="mandiri">Mandiri (IDN)</option>
+                        </select>
 
-                <div id="bankDetails" class="mt-4 hidden p-3">
-                    <p><strong>Bank:</strong> <span id="bankName"></span></p>
-                    <p><strong>No. Rekening:</strong> <span id="accountNumber"></span></p>
-                    <p><strong>Pemilik Rekening:</strong> <span id="accountHolder"></span></p>
-                    <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="copyBankDetails()">Salin Informasi</button>
+                        <div id="bankDetails" class="mt-4 hidden p-3 text-2xl font-garamond tracking-widest text-customDarkGreen">
+                            <p class="flex flex-col mb-6">
+                                <strong>Bank</strong> 
+                                <span id="bankName"></span>
+                            </p>
+                            <p class="flex flex-col mb-6">
+                                <strong>No. Rekening</strong> 
+                                <span id="accountNumber"></span>
+                            </p>
+                            <p class="flex flex-col mb-6">
+                                <strong>Pemilik Rekening</strong> 
+                                <span id="accountHolder"></span>
+                            </p>
+                            <button class="text-lg text-white bg-customPrimaryGreen px-8 py-4 rounded-full font-garamond" onclick="copyBankDetails()">Salin Informasi</button>
+                        </div>
+                    </div>
+                    
+
+                    
                 </div>
             </div>
         </div>
