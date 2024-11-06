@@ -17,7 +17,7 @@ module.exports = {
         'jogja': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291347/jogjabackground_jx9dgh.png')",
         'amplopdigital': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362802/amplopdigitalframe_g9zgrr.png')",
         'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_fbevhe.png')",
-        'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_uezv4h.png')",
+        'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_ndccqn.png')",
         'konfirmasioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/konfirmasioval_mvfhdc.png')",
         'linearfontgold': 'linear-gradient(0deg, #FFF0DA 1.04%, #94641E 4.17%, #FFF2DB 82.81%, #EAC885 93.75%, #FBF5D1 97.92%, #BD9A4B 99.99%, #ECD8A3 100%)',
         'hero-gradient-overlay': "linear-gradient(to top, rgba(47, 63, 54, 1), rgba(47, 63, 54, 0)), url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291358/megamendung_xov04r.svg')",
