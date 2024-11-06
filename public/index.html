@@ -66,7 +66,7 @@
         </div>
         <button
           id="scroll-btn"
-          class="mt-4 rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-lg font-normal tracking-wider text-white lg:hidden"
+          class="mt-4 rounded-full bg-customPrimaryGreen active:bg-customLightGreen px-8 py-4 font-garamond text-lg font-normal tracking-wider text-white lg:hidden"
         >
           Open Invitation
         </button>
@@ -573,7 +573,7 @@
           </div>
           <!-- Button -->
           <button
-            class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl text-white lg:text-2xl"
+            class="rounded-full bg-customPrimaryGreen active:bg-customLightGreen px-8 py-4 font-garamond text-lg text-white tracking-widest"
             onclick="openGoogleMapsDuri()"
           >
             Lihat Peta
@@ -626,7 +626,7 @@
           </div>
         </div>
         <button
-          class="my-10 rounded-full bg-customLightGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
+          class="my-10 rounded-full bg-customLightGreen active:bg-customPrimaryGreen  px-8 py-4 font-garamond text-lg tracking-widest text-white"
           onclick="addToCalendarDuri()"
         >
           Tambah Ke Kalender
@@ -650,7 +650,7 @@
             <h1 class="mx-auto w-7/10 text-center font-garamond text-lg tracking-widest text-customGray lg:text-2xl">Jl. Imogiri Barat No.25a, Bantul, Kesultanan Yogyakarta Hadiningrat</h1>
           </div>
           <button
-            class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl text-white lg:text-2xl"
+            class="rounded-full bg-customPrimaryGreen active:bg-customLightGreen px-8 py-4 font-garamond text-lg text-white tracking-widest"
             onclick="openGoogleMapsJogja()"
           >
             Lihat Peta
@@ -704,7 +704,7 @@
           </div>
         </div>
         <button
-          class="my-10 rounded-full bg-customLightGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
+          class="my-10 rounded-full bg-customLightGreen active:bg-customPrimaryGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
           onclick="addToCalendarJogja()"
         >
           Tambah Ke Kalender
@@ -736,7 +736,7 @@
           <div class="mb-10 flex h-[40vh] w-9/10 items-center justify-center">
             <iframe
               class="h-full w-full rounded-lg"
-              src="https://www.youtube.com/embed/JqFt1Ifw1Ag"
+              src="https://www.youtube.com/embed/9FiN7fHhdew"
               title="Livestream Akad Nikah"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -744,8 +744,8 @@
             ></iframe>
           </div>
           <button
-            class="mb-10 w-3/5 rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-xl tracking-widest text-white"
-            onclick=""
+            class="mb-10 w-3/5 rounded-full bg-customPrimaryGreen  active:bg-customLightGreen px-8 py-4 font-garamond text-lg tracking-widest text-white"
+            onclick="copyLink()"
           >
             Salin Link
           </button>
@@ -860,8 +860,9 @@
             </div>
             <div class="text-center">
               <button
+                id="submit-button"
                 type="submit"
-                class="mx-auto mb-6 w-3/5 rounded-full bg-customPrimaryGreen px-6 py-2 font-garamond text-lg tracking-widest text-white lg:mb-2 lg:px-8 lg:py-4"
+                class="mx-auto mb-6 w-3/5 rounded-full bg-customPrimaryGreen active:bg-customLightGreen px-6 py-2 font-garamond text-lg tracking-widest text-white lg:mb-2 lg:px-8 lg:py-4"
                 onclick=""
               >
                 Konfirmasi
@@ -915,7 +916,7 @@
                   <span id="accountHolder"></span>
                 </p>
                 <button
-                  class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-lg text-white"
+                  class="rounded-full bg-customPrimaryGreen px-8 py-4 font-garamond text-lg text-white tracking-widest active:bg-customLightGreen"
                   onclick="copyBankDetails()"
                 >
                   Salin Informasi
