@@ -204,17 +204,42 @@ function decreasePax() {
     }
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyXT6Izx6mjzESbyUKRnQhcqsDGpKZI7BEIDeAnEGbaBtBtpOq-PAjHqxWdjovT9wQ/exec'
-
-const form = document.forms['rsvp-form']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyXT6Izx6mjzESbyUKRnQhcqsDGpKZI7BEIDeAnEGbaBtBtpOq-PAjHqxWdjovT9wQ/exec';
+const form = document.forms['rsvp-form'];
+const submitButton = form.querySelector('button[type="submit"]');
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! your form is submitted successfully." ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-})
+    e.preventDefault();
+
+    const originalText = submitButton.textContent;
+
+    const fadeText = (newText, revert = false) => {
+        submitButton.style.transition = "opacity 0.3s ease";
+        submitButton.style.opacity = "0";
+        setTimeout(() => {
+            submitButton.textContent = newText;
+            submitButton.style.opacity = "1";
+            if (revert) {
+                setTimeout(() => {
+                    fadeText(originalText);
+                }, 1000);
+            }
+        }, 300);
+    };
+
+    fadeText("Mengirimkan pesan...");
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            fadeText("Pesan telah dikirim!", true);
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            fadeText("Error! Try Again", true);
+        });
+});
+
 
 function copyLink() {
     const link = "https://www.youtube.com/embed/9FiN7fHhdew";
