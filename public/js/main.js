@@ -223,8 +223,23 @@ form.addEventListener('submit', e => {
 function copyLink() {
     const link = "https://www.youtube.com/embed/9FiN7fHhdew";
     navigator.clipboard.writeText(link).then(() => {
-      alert("Tautan berhasil disalin");
+        const buttonText = document.getElementById("button-text");
+        const originalText = buttonText.textContent;
+        const fadeText = (newText, revert = false) => {
+            buttonText.style.transition = "opacity 0.3s ease";
+            buttonText.style.opacity = "0";
+            setTimeout(() => {
+                buttonText.textContent = newText;
+                buttonText.style.opacity = "1";
+                if (revert) {
+                    setTimeout(() => {
+                        fadeText(originalText);
+                    }, 1000);
+                }
+            }, 300);
+        };
+        fadeText("Tautan berhasil disalin", true);
     }).catch(err => {
-      console.error("Failed to copy link: ", err);
+        console.error("Failed to copy link: ", err);
     });
-  }
+}
