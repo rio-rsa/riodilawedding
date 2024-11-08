@@ -68,3 +68,49 @@
   border-radius: 8px;
 }
 
+/* Music Button Styles */
+.music-outer {
+  position: fixed;
+  z-index: 999;
+  bottom: 15px;
+  left: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.music-box {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-image: url("https://katsudoto.id/media/template/details/music.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  transition: all 0.8s cubic-bezier(.23,.56,.38,.78);
+}
+
+.music-box.playing {
+  animation: play-music 20s linear infinite;
+}
+
+@keyframes play-music {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .music-box {
+      width: 45px;
+      height: 45px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .music-outer {
+      bottom: 12px;
+      left: 12px;
+  }
+}

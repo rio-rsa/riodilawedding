@@ -234,12 +234,49 @@ function copyLink() {
                 if (revert) {
                     setTimeout(() => {
                         fadeText(originalText);
-                    }, 1000);
+                    }, 300);
                 }
-            }, 300);
+            }, 200);
         };
         fadeText("Tautan berhasil disalin", true);
     }).catch(err => {
         console.error("Failed to copy link: ", err);
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const musicBox = document.getElementById("music-box");
+    const audio = new Audio("/assets/audio.mp3");
+    audio.loop = true;
+    audio.muted = true; 
+    function playMusic() {
+        audio.muted = false;
+        const playPromise = audio.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                musicBox.classList.add("playing");
+            });
+        }
+    }
+    playMusic();
+    function attemptPlayOnInteraction() {
+        if (audio.paused) {
+            playMusic();
+        }
+    }
+    musicBox.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.currentTime = 0; 
+            musicBox.classList.add("playing"); 
+        } else {
+            audio.pause();
+            musicBox.classList.remove("playing"); 
+        }
+    });
+
+    document.addEventListener("click", attemptPlayOnInteraction, { once: true });
+    document.addEventListener("scroll", attemptPlayOnInteraction, { once: true });
+});
+
