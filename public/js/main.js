@@ -146,13 +146,13 @@ function addToCalendarJogja() {
 
 const bankData = {
     anz: {
-        name: "ANZ",
-        accountNumber: "1234567890",
+        name: "ANZ (BSB: 016363)",
+        accountNumber: "297882867",
         accountHolder: "Rio Akbar"
     },
     mandiri: {
         name: "Mandiri",
-        accountNumber: "0987654321",
+        accountNumber: "1720001511536",
         accountHolder: "Adila Ilma"
     },
     bni: {
