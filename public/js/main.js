@@ -270,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (audio.paused) {
             audio.currentTime = 0; 
             musicBox.classList.add("playing"); 
+            playMusic();
         } else {
             audio.pause();
             musicBox.classList.remove("playing"); 
