@@ -1,7 +1,3 @@
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const scrollButton = document.getElementById('scroll-btn');
     const introSection = document.getElementById('intro-section');
