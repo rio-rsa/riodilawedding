@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'checkbox': "url('/assets/checkbox.png')",
-        'hero-image': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291358/megamendung_xov04r.svg')",
+        'hero-image': "url('/assets/megamendung.webp')",
         'subtract': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730382489/subtract_tvrj1p.png')",
         'subtract-modified': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730383290/subtract-modified_k0wiil.png')",
         'subtract-modified-horizontal': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730383078/subtract-modified-horizontal_bfjjxm.png')",
