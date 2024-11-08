@@ -9,19 +9,19 @@ module.exports = {
       backgroundImage: {
         'checkbox': "url('/assets/checkbox.png')",
         'hero-image': "url('/assets/megamendung.webp')",
-        'subtract': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730382489/subtract_tvrj1p.png')",
-        'subtract-modified': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730383290/subtract-modified_k0wiil.png')",
-        'subtract-modified-horizontal': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730383078/subtract-modified-horizontal_bfjjxm.png')",
-        'subtract-green': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362545/subtractgreen_jplf7p.png')",
-        'polaroid': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291360/polaroid_qpn2p2.png')",
-        'jogja': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291347/jogjabackground_jx9dgh.png')",
+        'subtract': "url('/assets/subtract.webp')",
+        'subtract-modified': "url('/assets/subtract-modified.webp')",
+        'subtract-modified-horizontal': "url('/assets/subtract-modified-horizontal.webp')",
+        'subtract-green': "url('/assets/subtractgreen.webp')",
+        'polaroid': "url('/assets/polaroid.webp')",
+        'jogja': "url('/assets/jogjabackground.webp')",
         'amplopdigital': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730362802/amplopdigitalframe_g9zgrr.png')",
         'durioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291343/durioval_fbevhe.png')",
         'jogjaoval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/jogjaoval_ndccqn.png')",
         'konfirmasioval': "url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291348/konfirmasioval_mvfhdc.png')",
         'linearfontgold': 'linear-gradient(0deg, #FFF0DA 1.04%, #94641E 4.17%, #FFF2DB 82.81%, #EAC885 93.75%, #FBF5D1 97.92%, #BD9A4B 99.99%, #ECD8A3 100%)',
-        'hero-gradient-overlay': "linear-gradient(to top, rgba(47, 63, 54, 1), rgba(47, 63, 54, 0)), url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291358/megamendung_xov04r.svg')",
-        'jogja-gradient-overlay': "linear-gradient(to top, rgba(47, 63, 54, 1), rgba(47, 63, 54, 0)), url('https://res.cloudinary.com/dz0ndwdvf/image/upload/q_100,f_auto,w_auto/v1730291347/jogjabackground_jx9dgh.png')"
+        'hero-gradient-overlay': "linear-gradient(to top, rgba(47, 63, 54, 1), rgba(47, 63, 54, 0)), url('/assets/megamendung.webp')",
+        'jogja-gradient-overlay': "linear-gradient(to top, rgba(47, 63, 54, 1), rgba(47, 63, 54, 0)), url('/assets/jogjabackground.webp')"
       },
       width: {
         '9/10': '90%',
