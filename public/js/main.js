@@ -242,7 +242,7 @@ form.addEventListener('submit', e => {
 
 
 function copyLink() {
-    const link = "https://www.youtube.com/embed/9FiN7fHhdew";
+    const link = "https://www.youtube.com/live/owVgaeadgdY";
     navigator.clipboard.writeText(link).then(() => {
         const buttonText = document.getElementById("button-text");
         const originalText = buttonText.textContent;
