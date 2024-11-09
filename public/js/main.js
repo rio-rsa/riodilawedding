@@ -125,7 +125,7 @@ function isiOS() {
 
 function addToCalendarDuri() {
     const googleCalendarURL = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Rio+%26+Dila+%28Akad+%26+Resepsi%29&dates=20241201T010000Z/20241201T100000Z&details=Pernikahan+Rio+%26+Dila+%28Akad+%26+Resepsi%29+di+Duri%2C+Riau&location=Gedung+Lancang+Kuning%2C+PT.+Pertamina+Hulu+Rokan%2C+Duri%2C+Riau";
-    const icsFileURL = "https://res.cloudinary.com/dz0ndwdvf/raw/upload/v1730291342/duri_sxvaxx.ics";
+    const icsFileURL = "/assets/duri.ics";
     if (isiOS()) {
         window.location.href = icsFileURL;
     } else {
@@ -135,7 +135,7 @@ function addToCalendarDuri() {
 
 function addToCalendarJogja() {
     const googleCalendarURL = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Acara+Ngunduh+Mantu+Rio+%26+Dila&dates=20241208T021500Z/20241208T043000Z&details=Acara+Ngunduh+Mantu+Rio+%26+Dila+di+Yogyakarta&location=Pendopo+Tulungo%2C+Kasultanan+Ngayogyakarta+Hadiningrat";
-    const icsFileURL = "https://res.cloudinary.com/dz0ndwdvf/raw/upload/v1730291347/jogja_bswjq0.ics";
+    const icsFileURL = "/assets/jogja.ics";
 
     if (isiOS()) {
         window.location.href = icsFileURL;
