@@ -184,11 +184,29 @@ function copyBankDetails() {
     const details = `${accountNumber}`;
     
     navigator.clipboard.writeText(details).then(() => {
-        alert("Informasi rekening berhasil disalin!");
+        const buttonText = document.getElementById("bank-button");
+        const originalText = buttonText.textContent;
+
+        const fadeText = (newText, revert = false) => {
+            buttonText.style.transition = "opacity 0.3s ease";
+            buttonText.style.opacity = "0";
+            setTimeout(() => {
+                buttonText.textContent = newText;
+                buttonText.style.opacity = "1";
+                if (revert) {
+                    setTimeout(() => {
+                        fadeText(originalText);
+                    }, 1000);
+                }
+            }, 200);
+        };
+
+        fadeText("Informasi berhasil disalin!", true);
     }).catch(() => {
         alert("Gagal menyalin informasi rekening.");
     });
 }
+
 
 function increasePax() {
     const paxInput = document.getElementById("pax");
