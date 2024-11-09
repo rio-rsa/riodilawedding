@@ -201,7 +201,7 @@ function copyBankDetails() {
             }, 200);
         };
 
-        fadeText("Informasi berhasil disalin!", true);
+        fadeText("No. Rekening berhasil disalin!", true);
     }).catch(() => {
         alert("Gagal menyalin informasi rekening.");
     });
